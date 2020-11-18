@@ -1,10 +1,11 @@
-import React from 'react'
-
-const welcome = () => {
+import React from 'react';
+import './scss/main.css'
+const welcome = (props) => {
     return (
-        <div>
-            Welcome to the DePaul ID Lab Design System please choose a site and pick the component you want to copy from!
-        </div>
+        <header className="welcome-header">
+        <h1>{props.name}</h1>
+        <h4>{props.description}</h4>
+      </header>
     )
 }
 

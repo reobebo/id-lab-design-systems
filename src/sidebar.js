@@ -8,31 +8,42 @@ import {
 } from "react-router-dom";
 import FooterDesignCode from './footerDesignCode';
 import Welcome from './welcome';
+import Sidebaritem from './sidebarItem';
 
-const sidebar = () => {
+const sidebar = (props) => {
     return (
        
         <div className="sidebar">
-            <h4>Atoms</h4>
+            <nav>
+            <h4><span>Atoms<i className="fa fa-caret-down"></i></span> </h4>
+         
             <ul className="sidebar-list">
-                <li><Link to="/id-lab-headers">Logos</Link></li>
-                <li><Link to="/id-lab-footers">Backgrounds</Link></li>
-                <li><Link to="/id-lab-navigation">Buttons</Link></li>
+            <Sidebaritem link="/Welcome" name="Welcome"/>
+            <Sidebaritem link="/Welcome" name="Welcome"/>
+            <Sidebaritem link="/Welcome" name="Welcome"/>
+            <Sidebaritem link="/Welcome" name="Welcome"/>
+            <Sidebaritem link="/Welcome" name="Welcome"/>
             </ul>
             <br/>
              <h4>Molecules</h4>
             <ul className="sidebar-list">
-                <li><Link to="/id-lab-headers">Headers</Link></li>
-                <li><Link to="/id-lab-footers">Footers</Link></li>
-                <li><Link to="/id-lab-navigation">Navigation</Link></li>
+            <Sidebaritem link="/search-bar" name="Search Bar"/>
+            <Sidebaritem link="/Welcome" name="Welcome"/>
+            <Sidebaritem link="/Welcome" name="Welcome"/>
+            <Sidebaritem link="/Welcome" name="Welcome"/>
+         
             </ul>
             <br/>
-            <h4>Components</h4>
+
+            <h4>Pages</h4>
             <ul className="sidebar-list">
-                <li><Link to="/id-lab-headers">Headers</Link></li>
-                <li><Link to="/id-lab-footers">Footers</Link></li>
-                <li><Link to="/id-lab-navigation">Navigation</Link></li>
+            <Sidebaritem link="/homepage" name="Homepage"/>
+            <Sidebaritem link="/people" name="People"/>
+            <Sidebaritem link="/fervices" name="Services"/>
+            <Sidebaritem link="/events" name="Events"/>
+            <Sidebaritem link="/contact" name="Contact"/>
             </ul>
+            </nav>
         
       </div>
        
