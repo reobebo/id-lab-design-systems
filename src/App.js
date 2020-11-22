@@ -1,20 +1,24 @@
-import logo from './logo.svg';
 import Sidebar from './sidebar';
+import SidebarKnowledgePortal from './SidebarKnowledgePortal';
 import Topbar from './topbar';
 import FooterDesignCode from './footerDesignCode';
 import Welcome from './welcome';
-import { useHistory ,useLocation } from 'react-router-dom';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Redirect,
+  useLocation
+
 } from "react-router-dom";
 
 import './scss/main.css';
 
 
 function App() {
+  
+
  
   return (
     
@@ -22,31 +26,20 @@ function App() {
      
     <Router>
     <Topbar/>
+    <SidebarKnowledgePortal/>
+   
     <Switch>
-          <Route path="/id-lab-welcome">
-            <Welcome name="Main ID Lab Website"/>
-          </Route>
-          <Route path="/id-lab-footers">
-          <Welcome name="ODI Website" />
-          </Route>
-          <Route path="/id-lab-navigation">
-            <Welcome name="Knowledge Portal"/>
-          </Route>
+      <Redirect exact from="/" to="/id-lab" />
+          
+          <Route path="/id-lab" component={(props) => <><Welcome {...props} name="ID Lab Website" /></>}/>
+          <Route path="/odi" component={(props) => <Welcome {...props} name="ODI Website" />}/>
+          <Route path="/knowledge-portal" component={(props) => <><Welcome {...props} name="Knowledge Portal" /></>}/>
+          
         </Switch>
-    </Router>
-    <Router>
-    <Sidebar/>
-    <Switch>
-          <Route path="/welcome">
-            <Welcome />
-          </Route>
-          <Route path="/id-lab-footers">
-            <FooterDesignCode />
-          </Route>
-          <Route path="/id-lab-navigation">
-            <Welcome />
-          </Route>
-        </Switch>
+         <Sidebar/>
+          <Switch>
+             <Route path="/:app" children={(props) => <><Sidebar {...props}/></>}/>
+          </Switch>
   </Router>
    
 

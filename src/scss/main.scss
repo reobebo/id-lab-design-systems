@@ -1,15 +1,25 @@
 // variables
-$id-lab-main-color: #1e222c;
+$id-lab-main-color: #001a2c;
 // general site css
 * {
   margin: 0;
   padding: 0;
 }
+.App {
+  height: 100vh;
+}
 h1 {
   margin-top: 2%;
   text-align: center;
 }
-
+.topbar-image {
+  width: 30px;
+  text-align: left;
+  margin: 2rem 3rem 3rem 6.2rem;
+}
+.topnav {
+  padding: 3rem 0 0 0;
+}
 img {
   grid-area: image;
   display: block;
@@ -25,8 +35,8 @@ img {
   display: grid;
 
   grid-template-areas:
-    "header header header"
-    "nav image image"
+    "nav header header"
+    "nav content content"
     "nav content content"
     "nav content content";
 
@@ -38,21 +48,42 @@ img {
 }
 // sidebar css
 .sidebar {
+  height: 101vh;
   grid-area: nav;
   background-color: $id-lab-main-color;
   color: #fff;
+  h4 {
+    font-size: 1.4rem;
+  }
+  li {
+    padding-top: 8px;
 
-  li a {
-    color: #fff;
-    &:hover {
-      background-color: #555;
-      color: white;
+    a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: #fff;
+      &:hover {
+        border-bottom: 4px solid #0077e0;
+        color: white;
+      }
     }
   }
 }
-.welcome-header{
-  background-color: red;
-} 
+
+.nav-items {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.right-side {
+  grid-area: border;
+  background-color: $id-lab-main-color;
+}
+.welcome-header {
+  background-color: #f0f0f0;
+  grid-area: content;
+}
 .sidebar-list {
   list-style-type: none;
 }
@@ -63,27 +94,45 @@ img {
   color: #fff;
   grid-area: header;
   padding-bottom: 1rem;
+  li {
+    float: left;
+    width: 33%;
+    a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: #fff;
+      &:hover {
+        border-bottom: 4px solid #0077e0;
+        color: white;
+      }
+    }
+  }
 }
 .topbar-list {
   list-style-type: none;
   display: flex;
   align-items: center;
   margin-left: 20vw;
-  li {
-    float: left;
-    padding-right: 20px;
-  }
 }
 .tab-content {
   grid-area: content;
   margin: auto;
   width: 70%;
-  border: 3px solid green;
+  border: 3px solid $id-lab-main-color;
   padding: 10px;
+}
+.content {
+  grid-area: content;
+  background-color: #f0f0f0;
+  height: 90vh;
+  overflow: scroll;
 }
 
 .code-content {
+  grid-area: content;
   background-color: #f1f1f1;
+  height: 90vh;
+  overflow: scroll;
 }
 code {
   font-family: Consolas, "courier new";
@@ -103,4 +152,9 @@ code {
   &:hover {
     box-shadow: 0 0 o 0 blue inset, 0 0 10px 4px blue;
   }
+}
+
+// icons
+span {
+  content: "\005E";
 }

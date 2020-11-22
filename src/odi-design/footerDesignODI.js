@@ -1,26 +1,20 @@
 import React from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import image from './img/id_lab_main_side_footer.png';
+import image from '../img/id_lab_main_side_footer.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import {idLabFooter} from './content/footerContent';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-  useLocation,
-  useParams
-} from "react-router-dom";
-
-
-const FooterDesignCode = (props) => {
-  console.log(props.app);
-  if(props.app==='id-lab'){
+import {testTable} from '../content/footerContent';
+function footerDesignODI(props) {
+  let pathName=props.location.pathname
+  let codeNum=0;
+  console.log(props.location.pathname);
+  if (!pathName.includes('/id-lab-welcome')){
+     codeNum=0;
+  }
     return (
         <div className="content">
             <h1>
-            Footer 
+            Footer
         </h1>
             <img src={image} alt="Footer for the main ID Lab Website"/>
             <Tabs className="tab-content">
@@ -33,11 +27,11 @@ const FooterDesignCode = (props) => {
             <TabPanel>
                
                <div className="code-content">
-                 <CopyToClipboard text={idLabFooter[0].split("\n").map((i,key) => { return String(i+"\n")})}>
+                 <CopyToClipboard text={testTable[codeNum].split("\n").map((i,key) => { return String(i+"\n")})}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
             <code>
-                 {idLabFooter[0].split("\n").map((i,key) => {
+                 {testTable[codeNum].split("\n").map((i,key) => {
             return <div key={key}>{i}</div>;})}
             </code>
             </div>
@@ -45,7 +39,7 @@ const FooterDesignCode = (props) => {
             <TabPanel>
                  <div className="code-content">
             <code>
-                {idLabFooter[1].split("\n").map((i,key) => {
+                {testTable[codeNum].split("\n").map((i,key) => {
                   return <div key={key}>{i}</div>;
             })}
             </code>
@@ -53,17 +47,13 @@ const FooterDesignCode = (props) => {
             </TabPanel>
             <TabPanel>
               <div className="code-content">
-              <code>{idLabFooter[2]}</code>
+              <code>No JavaScript</code>
             </div>
             </TabPanel>
           </Tabs>
           
         </div>
-    )}else{
-      return(
-        'jimmy'
-      )
-    }
+    )
 }
 
-export default FooterDesignCode
+export default footerDesignODI

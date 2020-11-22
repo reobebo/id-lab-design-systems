@@ -1,5 +1,6 @@
-import React from 'react'
-import './scss/main.css'
+import React from 'react';
+import './scss/main.css';
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -9,12 +10,13 @@ import {
 const topbar = () => {
     return (
         <div className="topbar">
-            <h4>DePaul ID Lab</h4>
+          <nav className='topnav'>
             <ul className="topbar-list">
-               <li><Link to="/id-lab-welcome">Main ID Lab Website</Link></li>
-                <li><Link to="/id-lab-footers">ODI Conference 2020</Link></li>
-                <li><Link to="/id-lab-navigation">Knowledge Portal</Link></li>
+               <li><Link to="/id-lab">Main ID Lab Website</Link></li>
+                <li><Link to="/odi">ODI Conference 2020</Link></li>
+                <li><Link to="/knowledge-portal">Knowledge Portal</Link></li>
             </ul>
+            </nav>
         </div>
     )
 }

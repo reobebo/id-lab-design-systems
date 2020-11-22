@@ -11,7 +11,7 @@ import Welcome from './welcome';
 
 const sidebarItem = (props) => {
     return (
-        <>
+        <>  
                 <li><Link to={props.link}>{props.name}</Link></li>
                 </>
     )
