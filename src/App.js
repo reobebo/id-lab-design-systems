@@ -1,15 +1,12 @@
 import Sidebar from './sidebar';
-import SidebarKnowledgePortal from './SidebarKnowledgePortal';
 import Topbar from './topbar';
-import FooterDesignCode from './footerDesignCode';
 import Welcome from './welcome';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
-  useLocation
+  Redirect
 
 } from "react-router-dom";
 
@@ -26,24 +23,18 @@ function App() {
      
     <Router>
     <Topbar/>
-    <SidebarKnowledgePortal/>
-   
     <Switch>
-      <Redirect exact from="/" to="/id-lab" />
-          
-          <Route path="/id-lab" component={(props) => <><Welcome {...props} name="ID Lab Website" /></>}/>
-          <Route path="/odi" component={(props) => <Welcome {...props} name="ODI Website" />}/>
-          <Route path="/knowledge-portal" component={(props) => <><Welcome {...props} name="Knowledge Portal" /></>}/>
-          
+      <Redirect exact from="/" to="/id-lab/welcome" />
+          <Route path="/id-lab/welcome" component={(props) =><Welcome {...props} name="ID Lab Website" />}/>
+          <Route path="/odi/welcome" component={(props) => <Welcome {...props} name="ODI Website" />}/>
+          <Route path="/knowledge-portal/welcome" component={(props) =><Welcome {...props} name="Knowledge Portal" />}/>
         </Switch>
          <Sidebar/>
           <Switch>
              <Route path="/:app" children={(props) => <><Sidebar {...props}/></>}/>
           </Switch>
   </Router>
-   
-
-   
+  
    </div>
   );
 }

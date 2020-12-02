@@ -2,7 +2,6 @@ import React from 'react';
 import './scss/main.css';
 
 const welcome = (props) => {
-  console.log(props.location.pathname);
     return (
         <header className="welcome-header">
         <h1>{props.name}</h1>

@@ -27,9 +27,10 @@ img {
   margin-right: auto;
   margin-bottom: 3%;
   margin-top: 3%;
+}
+.component-image {
   width: 70%;
 }
-
 // setting up the css grid
 .container {
   display: grid;
@@ -46,6 +47,7 @@ img {
 
   height: 100vh;
 }
+
 // sidebar css
 .sidebar {
   height: 101vh;
@@ -126,6 +128,7 @@ img {
   background-color: #f0f0f0;
   height: 90vh;
   overflow: scroll;
+  width: 100%;
 }
 
 .code-content {
@@ -152,6 +155,10 @@ code {
   &:hover {
     box-shadow: 0 0 o 0 blue inset, 0 0 10px 4px blue;
   }
+}
+.headings-text {
+  width: 100%;
+  height: 100%;
 }
 
 // icons
