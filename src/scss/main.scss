@@ -48,6 +48,15 @@ img {
   height: 100vh;
 }
 
+.icon-images{
+  grid-template-areas:
+  "icon icon"
+  "icon icon"
+  "icon icon"
+  "icon icon";
+
+}
+
 // sidebar css
 .sidebar {
   height: 101vh;
@@ -85,6 +94,7 @@ img {
 .welcome-header {
   background-color: #f0f0f0;
   grid-area: content;
+  background-image: url("../img/background-5.png");
 }
 .sidebar-list {
   list-style-type: none;

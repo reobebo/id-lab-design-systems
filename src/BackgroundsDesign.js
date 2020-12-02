@@ -12,7 +12,7 @@ function BackgroundsDesign() {
     return (
         <div className="content">
             <h1>
-            Colors
+            Backgrounds
             </h1>
             <br/>
              <Tabs className="tab-content">

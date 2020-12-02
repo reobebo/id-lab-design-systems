@@ -459,18 +459,384 @@ idLabHtml=`
 `
 
 idLabCss=`
+/*----------------------------------------------------------------------------------------------------------------------
+# Home Page
+----------------------------------------------------------------------------------------------------------------------*/
+
+/* ------- ABOUT SECTION ------- */
+#particles-js {
+  background-color: white;
+  z-index: -1;
+  position: absolute;
+}
+#about {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(216, 216, 216, 0);
+}
+#lab-name {
+    font-family: 'D-DIN Regular', serif;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    color: #0182FF;
+}
+#btn-welcome {
+  text-align: center;
+  font-family: 'D-DIN DIN-Bold', serif;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 2.5px;
+  background: #0182FF;
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+}
+
+#btn-welcome span {
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  margin-left: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+#btn-welcome:hover span {
+  margin-left: 20px;
+}
+#welcome-heading {
+  padding: calc(70px + 5%) 10% 10%;
+  height: calc((100vh - 180px));
+}
+#bottom-arrow {
+  margin: 5em 0 2em 0;
+  height: 100%;
+}
+#button-arrow {
+  display: flex;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FF8C00;
+}
+#button-arrow a {
+  display: flex;
+  margin: auto;
+  color: white;
+}
+
+@media(min-width: 768px) {
+  #lab-name {
+    font-size: 14px;
+  }
+}
+
+/* ------- STRATEGIES SECTION ------- */
+#strategies-text {
+  background-color: rgb(15, 20, 41);
+  padding: 2em;
+}
+.strategies-title {
+  margin-bottom: 5%;
+}
+.strategies-description {
+  letter-spacing: 1px;
+  justify-content: center;
+}
+.btn-case-studies {
+  padding-left: 0 !important;
+  color: #FF8C00 !important;
+  margin: 3% 0;
+}
+.strategies-image-div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.strategies-image {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  #strategies-text {
+    padding: 8% 5%;
+  }
+}
+
+/* ------- FOUNDATION SECTION ------- */
+#foundation-pic img{
+  width: 319px;
+  height: 388px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:200px
+  max-height: 52px;
+  /*margin-top: 2em;*/
+}
+#foundation-text {
+  z-index: -1;
+}
+#foundation-title {
+  font-family: 'D-DIN DIN-Bold', serif;
+  font-size: 26px;
+  color: #0E0E0E;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 2em 0
+}
+#foundation-description {
+  padding: 2em;
+  background: #EFF0F1;
+  font-family: 'D-DIN Regular', serif;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.divider {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #foundation-yele {
+    padding: 5em;
+    min-height: 900px;
+  }
+  #foundation-text {
+    position: absolute;
+    top: 100px;
+    right: 35%;
+    width: 450px;
+  }
+  #foundation-title {
+    margin-left: 2em;
+  }
+  .inner {
+    width: 120px;
+  }
+  #foundation-description {
+    padding: 3em;
+  }
+  #foundation-pic {
+    position: absolute;
+    left: 60%;
+    width: 250px;
+  }
+  #foundation-pic img {
+    width: 204px;
+    height: 280px;
+  }
+  .divider {
+    display: inherit;
+    margin-left: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  #foundation-text {
+    top: 200px;
+    right: 40%;
+    width: 570px;
+  }
+  #foundation-title {
+    margin-left: 3em;
+  }
+  .inner {
+    width: 200px;
+  }
+  #foundation-description {
+    padding: 5em;
+  }
+  #foundation-pic {
+    left: 55%;
+    width: 350px;
+  }
+  #foundation-pic img {
+    width: 280px;
+    height: 356px;
+  }
+}
+
+
+/* ------- OUR THINKING SECTION ------- */
+#our-thinking h2 {
+  color: #0182FF;
+}
+
+#our-thinking-title {
+  margin: 2em auto;
+  text-align: center;
+}
+#our-thinking-background {
+  margin: 0 5%;
+  width: 90%;
+}
+#our-thinking-1 {
+  background-color: white;
+  padding: 3em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 40px 0 rgba(0,0,0,0.15);
+  height: 100%;
+}
+#our-thinking-2 {
+  background-color: white;
+  padding: 3em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 40px 0 rgba(0,0,0,0.15);
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  #our-thinking-title {
+    margin: 2em 0 1em 30%;
+    text-align: right;
+  }
+  #our-thinking-box {
+    position: absolute;
+    left: calc((100% - 768px)/2);
+    height: 500px;
+    width: 768px;
+    background: url('img/our-thinking.jpg') no-repeat;
+    background-size: cover;
+  }
+  #our-thinking-background {
+    max-width: 950px;
+    margin: 0 auto 5em;
+  }
+  #our-thinking-1 {
+    margin: 0;
+    position: relative;
+    top: -8em;
+    left: 50%;
+    min-height: 350px;
+  }
+  #our-thinking-2 {
+    margin: 0;
+    position: relative;
+    top: 16em;
+    right: 50%;
+    min-height: 300px;
+  }
+  #our-thinking-heading {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #our-thinking-box {
+    left: calc((100% - 850px)/2);
+    width: 850px;
+  }
+}
+
+/* ------- OUR CLIENTS SECTION ------- */
+#our-clients {
+  padding: 2em 0;
+}
+#our-clients-title {
+  font-family: 'D-DIN DIN-Bold', serif;
+  font-size: 26px;
+  letter-spacing: 1.9px;
+  line-height: 28px;
+  color: black;
+  margin-top: 127px;
+  margin-bottom: 60px;
+}
+.our-clients-client {
+  margin: 21px 35px;
+  width: 200px;
+  height: 52px;
+}
+.cdw-logo {
+  width: 155px;
+  height: 95px;
+}
+.legalGeneral-logo {
+  width: 160px;
+  height: 84px;
+}
+
+
+/* ------- LEADERSHIP SECTION ------- */
+#leadership {
+  background: rgba(216, 216, 216, .16);
+}
+#leadership-title {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+#leadership-text {
+  padding-bottom: 5%;
+}
+.leadership-group {
+  padding: 1% 0;
+  padding: 0 5% 10%;
+}
+.leadership-item {
+  transition: box-shadow .3s;
+  box-shadow: 0 2px 40px 0 rgba(0,0,0,0.04);
+  margin: 29px 15px;
+  background: #fff;
+  position:relative;
+  padding: 0;
+}
+.leadership-item img {
+  width: 100%;
+  /*filter: gray;*/
+  /*-webkit-filter: grayscale(1);*/
+  transition: all .8s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+}
+.leadership-item img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+}
+.leadership-item:hover {
+  box-shadow: 0 0 20px rgba(33,33,33,.3);
+}
+.board-name {
+  font-family: 'D-DIN DIN-Bold', serif;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 17px;
+  color: black;
+  padding: 5% 3%;
+}
+.board-title {
+  font-family: 'D-DIN Regular', serif;
+  font-size: 12px;
+  letter-spacing: .9px;
+  line-height: 13px;
+  color: #777777;
+  padding: 3%;
+}
+
+@media (min-width: 768px) {
+  .leadership-group {
+    padding: 0 5% 10%;
+  }
+  #our-clients {
+    padding: 10em 0;
+  }
+}
 
 `;
 
 idLabJs=`
-
+JavaScript is contained in the HTML Section
 `
 
 /* odi homepage */
 
 odiInfo=`This is the ODI 2020 Homepage which contains sections such as Home, About, Highlights,Sponsorship, Speakers, Location, and Schedule.  NOTE: JavaScript is included in the main HTML Page`
 
-odiHomePageHtml=`
+odiHtml=`
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9915,4 +10281,838 @@ odiJs=`
 
 })(jQuery); // End of use strict
 
-`
+`;
+
+const ikpInfo=`
+`;
+
+const ikpHtml=`
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://ikp.depaulidlab.com/xmlrpc.php">
+<!--[if lt IE 9]>
+	<script src="https://ikp.depaulidlab.com/wp-content/themes/alchem/js/html5.js"></script>
+	<![endif]-->
+<!-- Optimized by SG Optimizer plugin version - 5.6.8 -->
+	<!-- This site is optimized with the Yoast SEO plugin v15.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Home - Knowledge Portal</title>
+	<meta name="description" content="Welcome to DePaul iD Lab Innovation Knowledge Portal. Watch videos describing past projects that we have worked on from top leaders in Chicago." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://ikp.depaulidlab.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Home - Knowledge Portal" />
+	<meta property="og:description" content="Welcome to DePaul iD Lab Innovation Knowledge Portal. Watch videos describing past projects that we have worked on from top leaders in Chicago." />
+	<meta property="og:url" content="https://ikp.depaulidlab.com/" />
+	<meta property="og:site_name" content="Knowledge Portal" />
+	<meta property="article:modified_time" content="2020-11-23T18:55:25+00:00" />
+	<meta property="og:image" content="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-scaled.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" value="Written by">
+	<meta name="twitter:data1" value="admin">
+	<meta name="twitter:label2" value="Est. reading time">
+	<meta name="twitter:data2" value="1 minute">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ikp.depaulidlab.com/#website","url":"https://ikp.depaulidlab.com/","name":"Knowledge Portal","description":"","potentialAction":[{"@type":"SearchAction","target":"https://ikp.depaulidlab.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://ikp.depaulidlab.com/#primaryimage","inLanguage":"en-US","url":"https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-scaled.jpg","width":2560,"height":1707},{"@type":"WebPage","@id":"https://ikp.depaulidlab.com/#webpage","url":"https://ikp.depaulidlab.com/","name":"Home - Knowledge Portal","isPartOf":{"@id":"https://ikp.depaulidlab.com/#website"},"primaryImageOfPage":{"@id":"https://ikp.depaulidlab.com/#primaryimage"},"datePublished":"2019-02-19T08:18:57+00:00","dateModified":"2020-11-23T18:55:25+00:00","description":"Welcome to DePaul iD Lab Innovation Knowledge Portal. Watch videos describing past projects that we have worked on from top leaders in Chicago.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://ikp.depaulidlab.com/"]}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Knowledge Portal &raquo; Feed" href="https://ikp.depaulidlab.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Knowledge Portal &raquo; Comments Feed" href="https://ikp.depaulidlab.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ikp.depaulidlab.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='seedprod-global-admin-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/coming-soon/public/css/global-admin.css?ver=6.0.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://ikp.depaulidlab.com/wp-includes/css/dashicons.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://ikp.depaulidlab.com/wp-includes/css/admin-bar.min.css?ver=5.5.3' type='text/css' media='all' />
+<style id='admin-bar-inline-css' type='text/css'>
+#wp-admin-bar-fl-builder-frontend-edit-link .ab-icon:before { content: "\f116" !important; top: 2px; margin-right: 3px; }
+</style>
+<link rel='stylesheet' id='jquery.prettyphoto-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/wp-video-lightbox/css/prettyPhoto.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='video-lightbox-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/wp-video-lightbox/wp-video-lightbox.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://ikp.depaulidlab.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='amo-team-showcase-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/amo-team-showcase/public/css/amo-team-showcase-public.css?ver=1.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/bb-plugin/fonts/fontawesome/css/all.min.css?ver=2.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/bb-plugin/fonts/fontawesome/css/v4-shims.min.css?ver=2.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-11-css'  href='https://ikp.depaulidlab.com/wp-content/uploads/bb-plugin/cache/11-layout.css?ver=c06689bb8303d50f8d9ca9b1e1d741a0' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/bootstrap/css/bootstrap.min.css?ver=3.3.4' type='text/css' media='' />
+<link rel='stylesheet' id='prettyPhoto-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/css/prettyPhoto.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='classycountdown-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/jquery-countdown/jquery.classycountdown.css?ver=1.1.0' type='text/css' media='' />
+<link rel='stylesheet' id='twentytwenty-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/css/twentytwenty.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='audioplayer-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/css/audioplayer.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='weather-icons-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/weathericons/css/weather-icons.min.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='animate-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/css/animate.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='magee-shortcode-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/css/shortcode.css?ver=1.6.0' type='text/css' media='' />
+<link rel='stylesheet' id='team_manager-normalize-css-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/css/normalize.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='team_manager-awesome-css-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/css/font-awesome.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='team_manager-featherlight-css-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/css/featherlight.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='team_manager-style1-css-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/css/style1.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-0-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/fancybox/jquery.fancybox-1.3.4.css?ver=3.3.20' type='text/css' media='all' />
+<link rel='stylesheet' id='wpforms-admin-bar-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/wpforms-lite/assets/css/admin-bar.min.css?ver=1.6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='alchem-bootstrap-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/bootstrap/css/bootstrap.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-font-awesome-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/font-awesome/css/font-awesome.min.css?ver=4.3.0' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-animate-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/animate.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-prettyPhoto-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/css/prettyPhoto.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='owl.carousel-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/owl-carousel/assets/owl.carousel.css?ver=2.2.0' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-custom-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/css/custom.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-customize-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/css/customize.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-shortcode-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/css/shortcode.css?ver=1.8.25' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-woocommerce-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/css/woo.css?ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-style-css'  href='https://ikp.depaulidlab.com/wp-content/themes/depaulidlab/style.css?ver=5.5.3' type='text/css' media='all' />
+<style id='alchem-style-inline-css' type='text/css'>
+body{ font-size:14px}#menu-main > li > a > span{ font-size:14px}#menu-main li li a span{ font-size:14px}.breadcrumb-nav span,.breadcrumb-nav a{ font-size:14px}.widget-area .widget-title{ font-size:16px}.footer-widget-area .widget-title{ font-size:16px}h1{ font-size:36px}h2{ font-size:30px}h3{ font-size:24px}h4{ font-size:20px}h5{ font-size:18px}h6{ font-size:16px}.site-tagline{ font-size:14px}.entry-meta li,.entry-meta li a,.entry-meta span{ font-size:14px}.page-title h1{ font-size:30px}.page-title h3{ font-size:14px}.post-pagination li a{ font-size:14px}.fxd-header {
+		background-color: rgba(245,245,245,0.7);
+		}@media (min-width: 1200px){
+			.container {
+			  width: 1170pxpx;
+			  }
+			}
+.top-bar{background-color:#eee;}.site-name,.site-tagline{display: none;}footer .footer-info-area{background-color:#21568f}.fxd-header .site-nav > ul > li a{color:#21568f;}.page-title-bar h1,.page-title-bar a,.page-title-bar span{color:#ffffff !important;}#menu-main > li > a {color:#000000;}#menu-main > li > a:hover{color:#406da1;}@media (min-width: 920px) {
+							  .main-header .site-nav > ul > li > a {
+								padding-top: 0px;
+							  }
+							  }@media (min-width: 920px) {
+							  .main-header .site-nav > ul > li > a{
+								  padding-bottom:0px;
+								  } 
+								  }.fxd-header{background-color: rgba(245,245,245,0.7);}
+.fxd-header .site-nav > ul > li > a {font-size:14px;}
+.site-nav li ul{width:150 px}@media screen and (min-width: 919px){
+		.main-header .site-nav > ul > li > a{line-height:70px;}
+
+		.site-nav > ul > li a{ border-bottom:2px solid transparent; }
+
+		}@media screen and (max-width: 919px){
+	.site-nav-toggle {
+		display: block;
+	}
+	.site-nav {
+		display: none;
+		width: 100%;
+		margin-top: 0;
+		background-color: #fff;
+	}
+	.site-nav > ul > li {
+		float: none;
+		overflow: hidden;
+	}
+	.site-nav > ul > li + li {
+		margin-left: 0;
+	}
+	.site-nav > ul > li a {
+		line-height: 50px;
+	}
+	.site-nav > ul > li i {
+	line-height: 50px;
+    } 
+	.site-nav li > ul {
+		position: static;
+		margin-left: 20px;
+		z-index: 999;
+		width: auto;
+		background-color: transparent;
+	}
+	.site-nav li ul li > a {
+		color: #555;
+	}
+	.site-nav li ul li:hover > a {
+		color: #19cbcf;
+	}
+	.search-form {
+		display: none;
+		margin: 25px 0 15px;
+	}
+	header {
+		min-height: 65px;
+	}
+	.site-logo {
+		height: 50px;
+	}
+	.site-name {
+		margin: 0;
+		font-size: 24px;
+		font-weight: normal;
+	}
+}.page-title-bar{
+background-image: url(https://ikp.depaulidlab.com/wp-content/themes/alchem/images/bg-1.jpg);
+background-repeat:no;}
+.page-title-bar{
+		padding-top:210px;
+		padding-bottom:160px;
+		}@media (min-width: 992px) {
+			 .left-aside .col-main,
+		.right-aside .col-main {
+			width: 75%;
+			 }
+.left-aside .col-main {
+			left: 25%; 
+		}
+.left-aside .col-aside-left {
+			right: 75%; 
+		}
+.left-aside .col-aside-left,
+		.right-aside .col-aside-right {
+			width: 25%;
+		   }
+
+		 }@media (min-width: 992px) {
+			.both-aside .col-main {
+		width: 60%;
+	    }
+.both-aside .col-aside-left {
+			width: 20%;
+		}
+.both-aside .col-aside-left {
+			right: 60%;
+		}
+.both-aside .col-aside-right {
+			width: 20%;
+		}
+.both-aside .col-main {
+			left: 20%; 
+		}
+.both-aside .col-aside-right {
+			width: 20%;
+		}
+
+			}.footer-widget-area{
+
+	                           padding-top:60px;
+
+							   padding-bottom:40px;
+
+							   }.footer-info-area{
+
+	                           padding-top:;
+
+							   padding-bottom:;
+
+							   }.footer-sns i {
+		color:#8ba6c4
+		}.footer-sns a {
+		border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+		}.carousel-caption p{font-size:14px;}.carousel-caption p{text-align:left;}#alchem-home-sections .alchem-home-section-0{
+				background-color:;
+				background-image:url(https://demo.mageewp.com/alchem/wp-content/uploads/sites/21/2015/08/banner-1.jpg);
+				padding-top:0;
+				padding-bottom:0;
+				}
+#alchem-home-sections .alchem-home-section-0,.alchem-home-section-0 p,.alchem-home-section-0 span,.alchem-home-section-0 h1,.alchem-home-section-0 h2,.alchem-home-section-0 div,.alchem-home-section-0 li,.alchem-home-section-0 i{
+				color:#ffffff;
+				}
+#alchem-home-sections .alchem-home-section-0 a.magee-btn-normal{ color:#ffffff;border-color: #ffffff;}#alchem-home-sections .alchem-home-section-0 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-0 .owl-theme .owl-dots .owl-dot:hover{background-color:#ffffff;}#alchem-home-sections .alchem-home-section-0 .owl-theme .owl-dots .owl-dot{border: 2px solid #ffffff;}#alchem-home-sections .alchem-home-section-1{
+				background-color:#f5f5f5;
+				background-image:url();
+				padding-top:20px;
+				padding-bottom:20px;
+				}
+#alchem-home-sections .alchem-home-section-1,.alchem-home-section-1 p,.alchem-home-section-1 span,.alchem-home-section-1 h1,.alchem-home-section-1 h2,.alchem-home-section-1 div,.alchem-home-section-1 li,.alchem-home-section-1 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-1 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-1 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-1 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-1 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-2{
+				background-color:;
+				background-image:url();
+				padding-top:50px;
+				padding-bottom:50px;
+				}
+#alchem-home-sections .alchem-home-section-2,.alchem-home-section-2 p,.alchem-home-section-2 span,.alchem-home-section-2 h1,.alchem-home-section-2 h2,.alchem-home-section-2 div,.alchem-home-section-2 li,.alchem-home-section-2 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-2 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-2 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-2 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-2 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-3{
+				background-color:#f3f3f4;
+				background-image:url();
+				padding-top:50px;
+				padding-bottom:50px;
+				}
+#alchem-home-sections .alchem-home-section-3,.alchem-home-section-3 p,.alchem-home-section-3 span,.alchem-home-section-3 h1,.alchem-home-section-3 h2,.alchem-home-section-3 div,.alchem-home-section-3 li,.alchem-home-section-3 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-3 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-3 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-3 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-3 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-4{
+				background-color:;
+				background-image:url();
+				padding-top:60px;
+				padding-bottom:50px;
+				}
+#alchem-home-sections .alchem-home-section-4,.alchem-home-section-4 p,.alchem-home-section-4 span,.alchem-home-section-4 h1,.alchem-home-section-4 h2,.alchem-home-section-4 div,.alchem-home-section-4 li,.alchem-home-section-4 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-4 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-4 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-4 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-4 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-5{
+				background-color:;
+				background-image:url(https://demo.mageewp.com/alchem/wp-content/uploads/sites/23/2015/12/bg-02-1.jpg);
+				padding-top:60px;
+				padding-bottom:50px;
+				}
+#alchem-home-sections .alchem-home-section-5,.alchem-home-section-5 p,.alchem-home-section-5 span,.alchem-home-section-5 h1,.alchem-home-section-5 h2,.alchem-home-section-5 div,.alchem-home-section-5 li,.alchem-home-section-5 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-5 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-5 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-5 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-5 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-6{
+				background-color:;
+				background-image:url();
+				padding-top:50px;
+				padding-bottom:50px;
+				}
+#alchem-home-sections .alchem-home-section-6,.alchem-home-section-6 p,.alchem-home-section-6 span,.alchem-home-section-6 h1,.alchem-home-section-6 h2,.alchem-home-section-6 div,.alchem-home-section-6 li,.alchem-home-section-6 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-6 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-6 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-6 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-6 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-7{
+				background-color:;
+				background-image:url(https://demo.mageewp.com/alchem/wp-content/uploads/sites/23/2015/12/bg-003-2.jpg);
+				padding-top:50px;
+				padding-bottom:50px;
+				}
+#alchem-home-sections .alchem-home-section-7,.alchem-home-section-7 p,.alchem-home-section-7 span,.alchem-home-section-7 h1,.alchem-home-section-7 h2,.alchem-home-section-7 div,.alchem-home-section-7 li,.alchem-home-section-7 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-7 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-7 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-7 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-7 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-8{
+				background-color:;
+				background-image:url();
+				padding-top:50px;
+				padding-bottom:50px;
+				}
+#alchem-home-sections .alchem-home-section-8,.alchem-home-section-8 p,.alchem-home-section-8 span,.alchem-home-section-8 h1,.alchem-home-section-8 h2,.alchem-home-section-8 div,.alchem-home-section-8 li,.alchem-home-section-8 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-8 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-8 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-8 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-8 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-9{
+				background-color:#eeeeee;
+				background-image:url();
+				padding-top:20px;
+				padding-bottom:30px;
+				}
+#alchem-home-sections .alchem-home-section-9,.alchem-home-section-9 p,.alchem-home-section-9 span,.alchem-home-section-9 h1,.alchem-home-section-9 h2,.alchem-home-section-9 div,.alchem-home-section-9 li,.alchem-home-section-9 i{
+				color:;
+				}
+#alchem-home-sections .alchem-home-section-9 a.magee-btn-normal{ color:;border-color: ;}#alchem-home-sections .alchem-home-section-9 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-9 .owl-theme .owl-dots .owl-dot:hover{background-color:;}#alchem-home-sections .alchem-home-section-9 .owl-theme .owl-dots .owl-dot{border: 2px solid ;}#alchem-home-sections .alchem-home-section-10{
+				background-color:;
+				background-image:url(https://demo.mageewp.com/alchem/wp-content/uploads/sites/23/2015/12/bg-03-1.jpg);
+				padding-top:50px;
+				padding-bottom:50px;
+				}
+#alchem-home-sections .alchem-home-section-10,.alchem-home-section-10 p,.alchem-home-section-10 span,.alchem-home-section-10 h1,.alchem-home-section-10 h2,.alchem-home-section-10 div,.alchem-home-section-10 li,.alchem-home-section-10 i{
+				color:#ffffff;
+				}
+#alchem-home-sections .alchem-home-section-10 a.magee-btn-normal{ color:#ffffff;border-color: #ffffff;}#alchem-home-sections .alchem-home-section-10 .owl-theme .owl-dots .owl-dot.active, #alchem-home-sections .alchem-home-section-10 .owl-theme .owl-dots .owl-dot:hover{background-color:#ffffff;}#alchem-home-sections .alchem-home-section-10 .owl-theme .owl-dots .owl-dot{border: 2px solid #ffffff;}#custom {
+				}
+</style>
+<link rel='stylesheet' id='alchem-bigvideo-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/YTPlayer/css/jquery.mb.YTPlayer.min.css?ver=5.5.3' type='text/css' media='1' />
+<link rel='stylesheet' id='chld_thm_cfg_separate-css'  href='https://ikp.depaulidlab.com/wp-content/themes/depaulidlab/ctc-style.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='alchem-Open-Sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&#038;ver=5.5.3' type='text/css' media='' />
+<link rel='stylesheet' id='alchem-schemesss'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/css/scheme.less?ver=1.8.25' type='text/less' media='' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.12' type='text/css' media='all' />
+<link rel='stylesheet' id='yoast-seo-adminbar-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/wordpress-seo/css/dist/adminbar-1520.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-google-fonts-71de1c8eb603fed5ea2412bca4f6de45-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C700&#038;ver=5.5.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/wp-video-lightbox/js/jquery.prettyPhoto.min.js?ver=3.1.6' id='jquery.prettyphoto-js'></script>
+<script type='text/javascript' id='video-lightbox-js-extra'>
+/* <![CDATA[ */
+var vlpp_vars = {"prettyPhoto_rel":"wp-video-lightbox","animation_speed":"fast","slideshow":"5000","autoplay_slideshow":"false","opacity":"0.80","show_title":"true","allow_resize":"true","allow_expand":"true","default_width":"1500","default_height":"1650","counter_separator_label":"\/","theme":"dark_rounded","horizontal_padding":"20","hideflash":"true","wmode":"opaque","autoplay":"true","modal":"false","deeplinking":"false","overlay_gallery":"true","overlay_gallery_max":"30","keyboard_shortcuts":"true","ie6_fallback":"true"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/wp-video-lightbox/js/video-lightbox.js?ver=3.1.6' id='video-lightbox-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/js/jquery.waypoints.js?ver=2.0.5' id='waypoints-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/jquery-countdown/jquery.countdown.min.js?ver=2.0.4' id='countdown-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/jquery-easy-pie-chart/jquery.easypiechart.min.js?ver=2.1.7' id='easy-pie-chart-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/js/jquery.prettyPhoto.js?ver=3.1.6' id='jquery.prettyPhoto-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/jquery-countdown/jquery.knob.js?ver=1.2.11' id='jquery.knob-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/jquery-countdown/jquery.throttle.js?ver=5.5.3' id='jquery.throttle-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/jquery-countdown/jquery.classycountdown.min.js?ver=1.1.0' id='jquery.classycountdown-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/js/jquery.event.move.js?ver=1.3.6' id='jquery.event.move-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/js/jquery.twentytwenty.js?ver=5.5.3' id='jquery.twentytwenty-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/js/audioplayer.js?ver=5.5.3' id='jquery-audioplayer-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/js/chart.min.js?ver=2.1.4' id='chart.min-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/js/modernizr.custom.js?ver=1.0' id='team_manager-modernizer-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/js/classie.js?ver=1.0' id='team_manager-classie-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/js/featherlight.js?ver=1.0' id='team_manager-featherlight-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/js/main.js?ver=1.0' id='team_manager-main-js'></script>
+<script type='text/javascript' id='photocrati_ajax-js-extra'>
+/* <![CDATA[ */
+var photocrati_ajax = {"url":"https:\/\/ikp.depaulidlab.com\/index.php?photocrati_ajax=1","wp_home_url":"https:\/\/ikp.depaulidlab.com","wp_site_url":"https:\/\/ikp.depaulidlab.com","wp_root_url":"https:\/\/ikp.depaulidlab.com","wp_plugins_url":"https:\/\/ikp.depaulidlab.com\/wp-content\/plugins","wp_content_url":"https:\/\/ikp.depaulidlab.com\/wp-content","wp_includes_url":"https:\/\/ikp.depaulidlab.com\/wp-includes\/","ngg_param_slug":"nggallery"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ajax/static/ajax.min.js?ver=3.3.20' id='photocrati_ajax-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/less.min.js?ver=2.5.1' id='alchem-less-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/respond.min.js?ver=2.0.0' id='alchem-respond-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/jquery.nav.js?ver=3.0.0' id='alchem-nav-js'></script>
+<link rel="https://api.w.org/" href="https://ikp.depaulidlab.com/wp-json/" /><link rel="alternate" type="application/json" href="https://ikp.depaulidlab.com/wp-json/wp/v2/pages/11" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ikp.depaulidlab.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ikp.depaulidlab.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.3" />
+<link rel='shortlink' href='https://ikp.depaulidlab.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://ikp.depaulidlab.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fikp.depaulidlab.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://ikp.depaulidlab.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fikp.depaulidlab.com%2F&#038;format=xml" />
+		 <script>
+		   "use strict";
+		   var amoTeamVars                      = {};
+		   amoTeamVars.teamSC                   = [];
+		   amoTeamVars.memberSC                 = [];
+		   amoTeamVars[ 'panel-alt-scroll' ]    = 0;
+		   amoTeamVars[ 'thumbs-clear-events' ] = 1;
+		 </script><script>
+            WP_VIDEO_LIGHTBOX_VERSION="1.9.1";
+            WP_VID_LIGHTBOX_URL="https://ikp.depaulidlab.com/wp-content/plugins/wp-video-lightbox";
+                        function wpvl_paramReplace(name, string, value) {
+                // Find the param with regex
+                // Grab the first character in the returned string (should be ? or &)
+                // Replace our href string with our new value, passing on the name and delimeter
+
+                var re = new RegExp("[\?&]" + name + "=([^&#]*)");
+                var matches = re.exec(string);
+                var newString;
+
+                if (matches === null) {
+                    // if there are no params, append the parameter
+                    newString = string + '?' + name + '=' + value;
+                } else {
+                    var delimeter = matches[0].charAt(0);
+                    newString = string.replace(re, delimeter + name + "=" + value);
+                }
+                return newString;
+            }
+            </script><!-- <meta name="NextGEN" version="3.3.20" /> -->
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+			<style type="text/css" id="wp-custom-css">
+			#menu-main > li > a:hover {
+    border-bottom: none !important;
+}
+		</style>
+		<style id="tt-easy-google-font-styles" type="text/css">p { }
+h1 { }
+h2 { }
+h3 { }
+h4 { }
+h5 { }
+h6 { }
+</style><link rel='stylesheet' id='fl-builder-google-fonts-2b06e332f63dc1d09750d8beea40eaa6-css'  href='//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C700&#038;ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='https://ikp.depaulidlab.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://ikp.depaulidlab.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elfsight-youtube-gallery-custom-css'  href='https://ikp.depaulidlab.com/wp-content/uploads/elfsight-youtube-gallery/elfsight-youtube-gallery-custom.css?ver=3.2.0' type='text/css' media='all' />
+</head>
+<body class="home page-template-default page page-id-11 logged-in admin-bar no-customize-support fl-builder has-slider">
+<div class="wrapper ">
+<div class="top-wrap">
+      <header class="header-style-1 header-wrap  logo-left">
+                    
+                         
+            <div class="main-header ">
+                <div class="container-fluid">
+                    <div class="logo-box alchem_header_style alchem_default_logo">
+                  <a href="https://ikp.depaulidlab.com/">
+                                            <img class="site-logo normal_logo" alt="Knowledge Portal" src="https://ikp.depaulidlab.com/wp-content/uploads/2020/06/Primary-Logo-Small.png" />
+                                                                 </a>
+                        <div class="name-box">
+                            <a href="https://ikp.depaulidlab.com/"><h1 class="site-name">Knowledge Portal</h1></a>
+                            <span class="site-tagline"></span>
+                        </div>
+                    </div>
+                    <button class="site-nav-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+                    <nav class="site-nav" role="navigation">
+                    <ul id="menu-main" class="main-nav"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-20"><a href="https://ikp.depaulidlab.com/" aria-current="page"><span class="menu-item-label">Home</span></a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://ikp.depaulidlab.com/videos/"><span class="menu-item-label">Videos</span></a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://ikp.depaulidlab.com/aboutus/"><span class="menu-item-label">Contact Us</span></a></li>
+<li id="menu-item-144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-144"><a href="https://depaulidlab.com/"><span class="menu-item-label"><DePauliDLab id> DePaul iD Lab</DePauliDLab></span></a></li>
+</ul>                    </nav>
+                </div>
+            </div>
+                                   <!-- sticky header -->
+           <div class="fxd-header logo-left">
+                <div class="container-fluid">
+                    <div class="logo-box text-left alchem_header_style alchem_default_logo">
+                        <a href="https://ikp.depaulidlab.com/">
+                    
+                                            <img class="site-logo normal_logo" alt="Knowledge Portal" src="https://ikp.depaulidlab.com/wp-content/uploads/2019/03/KP-LOGO2_website.png" />
+                                          
+                                            </a>
+                        <div class="name-box">
+                            <a href="https://ikp.depaulidlab.com/"><h1 class="site-name">Knowledge Portal</h1></a>
+                            <span class="site-tagline"></span>
+                        </div>
+                    </div>
+                    <button class="site-nav-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+                    <nav class="site-nav" role="navigation">
+                        <ul id="menu-main" class="main-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-20"><a href="https://ikp.depaulidlab.com/" aria-current="page"><span class="menu-item-label">Home</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://ikp.depaulidlab.com/videos/"><span class="menu-item-label">Videos</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://ikp.depaulidlab.com/aboutus/"><span class="menu-item-label">Contact Us</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-144"><a href="https://depaulidlab.com/"><span class="menu-item-label"><DePauliDLab id> DePaul iD Lab</DePauliDLab></span></a></li>
+</ul>                    </nav>
+                </div>
+            </div>
+                                     
+            <div class="clear"></div>
+        </header>  </div>
+<div id="post-11" class="post-11 page type-page status-publish hentry">
+   
+ <div class="post-wrap">
+            <div class="container">
+                <div class="page-inner row no-aside">
+                        <div class="col-main">
+             
+			<div class="entry-content">
+  <div class="fl-builder-content fl-builder-content-11 fl-builder-content-primary" data-post-id="11"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5e960343743f2 fl-row-custom-height fl-row-align-top fl-row-bg-overlay" data-node="5e960343743f2">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e960343743e9" data-node="5e960343743e9">
+			<div class="fl-col fl-node-5e960343743ed" data-node="5e960343743ed">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5ed5e8dc0f1e2" data-node="5ed5e8dc0f1e2">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h3 style="text-align: center;"><strong>iD Lab</strong></h3>
+<h3 style="text-align: center;"><strong>I</strong>nnovation <strong>K</strong>nowledge <strong>P</strong>ortal</h3>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5e95dbfc66dfa" data-node="5e95dbfc66dfa">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e95dbfc66de9" data-node="5e95dbfc66de9">
+			<div class="fl-col fl-node-5e95dbfc66ded" data-node="5e95dbfc66ded">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-video fl-node-5e95dbfc66df9" data-node="5e95dbfc66df9">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-video fl-wp-video" itemscope itemtype="https://schema.org/VideoObject">
+	<meta itemprop="url" content="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/Innovation-Knowledge-Portal-Introduction.mp4" /><meta itemprop="thumbnail" content="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/Screen-Shot-2020-04-14-at-11.05.08-AM.png" /><div style="width: 100px;" class="wp-video"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-11-1" width="100" height="100" poster="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/Screen-Shot-2020-04-14-at-11.05.08-AM.png" preload="metadata" controls="controls"><source type="video/mp4" src="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/Innovation-Knowledge-Portal-Introduction.mp4?_=1" /><a href="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/Innovation-Knowledge-Portal-Introduction.mp4">https://ikp.depaulidlab.com/wp-content/uploads/2020/04/Innovation-Knowledge-Portal-Introduction.mp4</a></video></div></div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5e95dc3839607 fl-col-small" data-node="5e95dc3839607">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5e960935c38f5" data-node="5e960935c38f5">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<h2 style="text-align: left;">Vision</h2>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-5e95dbfc66df5" data-node="5e95dbfc66df5">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="text-align: left;">Extending from Dr. Olayele Adelakun’s vision of establishing a place<br />
+where organizations can partner with universities to forward their innovation agenda, the Innovation Knowledge Portal is a hub for education and discussion around innovation for everyone from students to professionals in the C-Suite.</p>
+<p style="text-align: left;">Interested in becoming a contributor or connecting with the DePaul<br />
+Innovation Development Lab?</p>
+<p style="text-align: center;">
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-button fl-node-5e95dbfc66df7" data-node="5e95dbfc66df7">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-wrap fl-button-width-auto fl-button-center">
+			<a href="https://depaulidlab.com/" target="_blank" class="fl-button" role="button" rel="noopener" >
+							<span class="fl-button-text">Connect</span>
+					</a>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5e95ca7016cec" data-node="5e95ca7016cec">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5e95ca7016e1a" data-node="5e95ca7016e1a">
+			<div class="fl-col fl-node-5e95ca7016e20 fl-col-small" data-node="5e95ca7016e20">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-callout fl-node-5e95ca7016e22" data-node="5e95ca7016e22">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-callout fl-callout-center fl-callout-has-photo fl-callout-photo-above-title">
+		<div class="fl-callout-content">
+		<div class="fl-callout-photo"><div class="fl-photo fl-photo-align-" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img loading="lazy" class="fl-photo-img wp-image-898 size-full" src="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-scaled.jpg" alt="IMG_2418" itemprop="image" height="1707" width="2560" title="IMG_2418" srcset="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-scaled.jpg 2560w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-300x200.jpg 300w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-1024x683.jpg 1024w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-768x512.jpg 768w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-1536x1024.jpg 1536w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/IMG_2418-2048x1365.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />
+					</div>
+	</div>
+</div><h3 class="fl-callout-title"><span class="fl-callout-title-text"></span></h3>		<div class="fl-callout-text-wrap">
+			<div class="fl-callout-text"><h3><strong>Hear</strong> from our Experts</h3>
+<p>Learn from leaders in innovation from a variety of industries.</p>
+</div>		</div>
+	</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5e95ca7016e24 fl-col-small" data-node="5e95ca7016e24">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-callout fl-node-5e95ca7016e25" data-node="5e95ca7016e25">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-callout fl-callout-center fl-callout-has-photo fl-callout-photo-above-title">
+		<div class="fl-callout-content">
+		<div class="fl-callout-photo"><div class="fl-photo fl-photo-align-" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img loading="lazy" class="fl-photo-img wp-image-896 size-full" src="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC08264-scaled.jpg" alt="DSC08264" itemprop="image" height="1707" width="2560" title="DSC08264" srcset="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC08264-scaled.jpg 2560w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC08264-300x200.jpg 300w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC08264-1024x683.jpg 1024w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC08264-768x512.jpg 768w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC08264-1536x1024.jpg 1536w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC08264-2048x1365.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />
+					</div>
+	</div>
+</div><h3 class="fl-callout-title"><span class="fl-callout-title-text"></span></h3>		<div class="fl-callout-text-wrap">
+			<div class="fl-callout-text"><h3><strong>Explore</strong> Topics on Innovation</h3>
+<p>Discover new ways to innovate through engaging content.</p>
+</div>		</div>
+	</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5e95ca7016e27 fl-col-small" data-node="5e95ca7016e27">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-callout fl-node-5e95ca7016e28" data-node="5e95ca7016e28">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-callout fl-callout-center fl-callout-has-photo fl-callout-photo-above-title">
+		<div class="fl-callout-content">
+		<div class="fl-callout-photo"><div class="fl-photo fl-photo-align-" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-jpg">
+				<img loading="lazy" class="fl-photo-img wp-image-893 size-full" src="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC06624-scaled.jpg" alt="DSC06624" itemprop="image" height="1707" width="2560" title="DSC06624" srcset="https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC06624-scaled.jpg 2560w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC06624-300x200.jpg 300w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC06624-1024x683.jpg 1024w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC06624-768x512.jpg 768w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC06624-1536x1024.jpg 1536w, https://ikp.depaulidlab.com/wp-content/uploads/2020/04/DSC06624-2048x1365.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />
+					</div>
+	</div>
+</div><h3 class="fl-callout-title"><span class="fl-callout-title-text"></span></h3>		<div class="fl-callout-text-wrap">
+			<div class="fl-callout-text"><h3><strong>Our vision:</strong> Innovation first</h3>
+<p>Content is designed for individuals at all stages of their careers, from students to professionals in the C-Suite.</p>
+</div>		</div>
+	</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-5cab53c5b5d63" data-node="5cab53c5b5d63">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5cab53c5bb54d" data-node="5cab53c5bb54d">
+			<div class="fl-col fl-node-5cab53c5bb61d" data-node="5cab53c5bb61d">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-heading fl-node-5cab53cb05259" data-node="5cab53cb05259">
+	<div class="fl-module-content fl-node-content">
+		<h4 class="fl-heading">
+		<span class="fl-heading-text">Featured Videos</span>
+	</h4>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5c774a673443f" data-node="5c774a673443f">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5c774a673aa61" data-node="5c774a673aa61">
+			<div class="fl-col fl-node-5c774a673ab17" data-node="5c774a673ab17">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5c774a95b613f" data-node="5c774a95b613f">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>
+            <div 
+                class="elfsight-widget-youtube-gallery elfsight-widget" 
+                data-elfsight-youtube-gallery-options="%7B%22channel%22%3A%22https%3A%5C%2F%5C%2Fwww.youtube.com%5C%2Fchannel%5C%2FUCDKo_4erdVcPCqMgH6Q4fjg%22%2C%22sourceGroups%22%3A%5B%7B%22name%22%3A%22Playlist%202%22%2C%22sources%22%3A%5B%22https%3A%5C%2F%5C%2Fwww.youtube.com%5C%2Fplaylist%3Flist%3DPLeloadL1OOn6Wv8Liv4exStEIjlAi4y2e%22%5D%7D%5D%2C%22headerVisible%22%3Afalse%2C%22headerLayout%22%3A%22accent%22%2C%22headerInfo%22%3A%5B%5D%2C%22headerChannelName%22%3Anull%2C%22headerChannelDescription%22%3Anull%2C%22headerChannelLogo%22%3Anull%2C%22headerChannelBanner%22%3Anull%2C%22contentColumns%22%3A3%2C%22contentRows%22%3A1%2C%22contentGutter%22%3A20%2C%22contentResponsive%22%3A%5B%7B%22minWidth%22%3A375%2C%22columns%22%3A%221%22%2C%22rows%22%3A1%2C%22gutter%22%3A%220%22%7D%2C%7B%22minWidth%22%3A768%2C%22columns%22%3A2%2C%22rows%22%3A1%2C%22gutter%22%3A%2220%22%7D%5D%2C%22width%22%3A%22auto%22%2C%22videoLayout%22%3A%22classic%22%2C%22videoInfo%22%3A%5B%22duration%22%2C%22title%22%2C%22date%22%2C%22playIcon%22%5D%2C%22videoPlayMode%22%3A%22popup%22%2C%22popupInfo%22%3A%5B%22title%22%2C%22channelLogo%22%2C%22channelName%22%2C%22viewsCounter%22%2C%22likesCounter%22%2C%22dislikesCounter%22%2C%22likesRatio%22%2C%22share%22%2C%22date%22%2C%22description%22%2C%22descriptionMoreButton%22%5D%2C%22popupAutoplay%22%3Atrue%2C%22contentDirection%22%3A%22horizontal%22%2C%22contentArrowsControl%22%3Atrue%2C%22contentScrollControl%22%3Afalse%2C%22contentDragControl%22%3Atrue%2C%22contentPaginationControl%22%3Afalse%2C%22contentScrollbar%22%3Atrue%2C%22contentSearch%22%3Afalse%2C%22contentDivider1%22%3Anull%2C%22contentTransitionSpeed%22%3A600%2C%22contentTransitionEffect%22%3A%22coverflow%22%2C%22contentFreeMode%22%3Afalse%2C%22contentDivider2%22%3Anull%2C%22contentAuto%22%3A0%2C%22contentAutoPauseOnHover%22%3Afalse%2C%22colorScheme%22%3A%22custom%22%2C%22colorHeaderBg%22%3A%22rgb%28139%2C%20166%2C%20196%29%22%2C%22colorHeaderBannerOverlay%22%3A%22rgba%28255%2C%20255%2C%20255%2C%200.92%29%22%2C%22colorHeaderChannelName%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorHeaderChannelNameHover%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorHeaderChannelDescription%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorHeaderAnchor%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorHeaderAnchorHover%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorHeaderCounters%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.7%29%22%2C%22colorGroupsBg%22%3A%22rgb%28237%2C%20226%2C%20226%29%22%2C%22colorGroupsLink%22%3A%22rgb%2817%2C%2017%2C%2017%2C%200.5%29%22%2C%22colorGroupsLinkHover%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorGroupsLinkActive%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorGroupsHighlightHover%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorGroupsHighlightActive%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorVideoBg%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorVideoOverlay%22%3A%22rgba%2833%2C%2086%2C%20143%2C%200.82%29%22%2C%22colorVideoPlayIcon%22%3A%22rgba%28255%2C%20255%2C%20255%2C%200.4%29%22%2C%22colorVideoPlayIconHover%22%3A%22rgba%28255%2C%20255%2C%20255%2C%200.8%29%22%2C%22colorVideoDuration%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorVideoDurationBg%22%3A%22rgba%2834%2C%2034%2C%2034%2C%200.81%29%22%2C%22colorVideoTitle%22%3A%22rgb%2813%2C%2013%2C%2013%29%22%2C%22colorVideoTitleHover%22%3A%22rgb%2833%2C%2086%2C%20143%29%22%2C%22colorVideoDate%22%3A%22rgb%2813%2C%2013%2C%2013%29%22%2C%22colorVideoDescription%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorVideoAnchor%22%3A%22rgb%2826%2C%20137%2C%20222%29%22%2C%22colorVideoAnchorHover%22%3A%22rgb%2847%2C%20165%2C%20255%29%22%2C%22colorVideoCounters%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.7%29%22%2C%22colorPopupBg%22%3A%22rgb%28139%2C%20166%2C%20196%29%22%2C%22colorPopupAnchor%22%3A%22rgb%2826%2C%20137%2C%20222%29%22%2C%22colorPopupAnchorHover%22%3A%22rgb%2847%2C%20165%2C%20255%29%22%2C%22colorPopupOverlay%22%3A%22rgba%280%2C%200%2C%200%2C%200.7%29%22%2C%22colorPopupTitle%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorPopupChannelName%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorPopupChannelNameHover%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorPopupViewsCounter%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.7%29%22%2C%22colorPopupLikesRatio%22%3A%22rgb%2847%2C%20165%2C%20255%29%22%2C%22colorPopupDislikesRatio%22%3A%22rgb%28207%2C%20207%2C%20207%29%22%2C%22colorPopupLikesCounter%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.5%29%22%2C%22colorPopupDislikesCounter%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.5%29%22%2C%22colorPopupShare%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.5%29%22%2C%22colorPopupDate%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.7%29%22%2C%22colorPopupDescription%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorPopupDescriptionMoreButton%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.5%29%22%2C%22colorPopupDescriptionMoreButtonHover%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.7%29%22%2C%22colorPopupCommentsUsername%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorPopupCommentsUsernameHover%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorPopupCommentsPassedTime%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.7%29%22%2C%22colorPopupCommentsLikes%22%3A%22rgba%2817%2C%2017%2C%2017%2C%200.5%29%22%2C%22colorPopupCommentsText%22%3A%22rgb%2817%2C%2017%2C%2017%29%22%2C%22colorPopupControls%22%3A%22rgb%28160%2C%20160%2C%20160%29%22%2C%22colorPopupControlsHover%22%3A%22rgb%28220%2C%20220%2C%20220%29%22%2C%22colorPopupControlsMobile%22%3A%22rgb%28220%2C%20220%2C%20220%29%22%2C%22colorPopupControlsMobileBg%22%3A%22rgba%28255%2C%20255%2C%20255%2C%200%29%22%2C%22colorContentBg%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorContentArrows%22%3A%22rgb%280%2C%200%2C%200%29%22%2C%22colorContentArrowsHover%22%3A%22rgb%280%2C%200%2C%200%29%22%2C%22colorContentArrowsBg%22%3A%22rgba%28255%2C%20255%2C%20255%2C%200.8%29%22%2C%22colorContentArrowsBgHover%22%3A%22rgba%28255%2C%20255%2C%20255%2C%201%29%22%2C%22colorContentScrollbarBg%22%3A%22rgb%28204%2C%20204%2C%20204%29%22%2C%22colorContentScrollbarSliderBg%22%3A%22rgba%280%2C%200%2C%200%2C%200.4%29%22%2C%22lang%22%3A%22en%22%2C%22adsClient%22%3Anull%2C%22adsSlotsContent%22%3Anull%2C%22adsSlotsPopup%22%3Anull%2C%22noCookies%22%3Atrue%2C%22cacheTime%22%3A3600%2C%22key%22%3A%22AIzaSyAv2W8UfDlFaD5iHWM__GOclpPGIhVgcg8%22%7D" 
+                data-elfsight-youtube-gallery-version="3.2.0">
+            </div>
+            </p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5c929431dce09" data-node="5c929431dce09">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5c929431e2c57" data-node="5c929431e2c57">
+			<div class="fl-col fl-node-5c929431e2d48" data-node="5c929431e2d48">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-button fl-node-5ea8e2baad477" data-node="5ea8e2baad477">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-wrap fl-button-width-custom fl-button-center">
+			<a href="https://ikp.depaulidlab.com/?page_id=13" target="_self" class="fl-button" role="button">
+							<span class="fl-button-text">More Videos</span>
+					</a>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div>    
+  <div class="comments-area text-left">
+      </div>
+</div>
+<!-- .entry-content -->
+
+		                        </div>
+                                                        </div>
+                </div>
+            </div>
+      </div>
+ <!--Footer-->
+         <footer class="">
+                    
+            <div class="footer-info-area">
+                <div class="contact-info">
+                        <h2>Contact Info</h2>
+                    <ul>
+                        <li>243 S WABASH AVE, CHICAGO, IL 60604, 7TH FLOOR</li>
+                        <li>(312) 362-1309</li>
+                        <li>depaulilab@gmail.com</li>
+                    </ul>
+                </div>
+              <div class="depaul-cdm">
+                    <img src="/wp-content/uploads/2019/03/depaul-logo-1.png" width="200" height="40"/>
+                </div>
+                <div class="container text-center alchem_footer_social_icon_1"> 
+                 <ul class="footer-sns"><li><a target="_blank" rel="" href="https://www.linkedin.com/company/depaul-innovation-lab/" data-placement="top" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li><li><a target="_blank" rel="" href="mailto:depaulilab@gmail.com?subject=Email%20from%20iD-Lab%20Website" data-placement="top" data-toggle="tooltip" title="Email"><i class="fa fa-envelope"></i></a></li></ul>                    <div class="clearfix"></div>
+                    
+                    <div class="site-info" style="display:none;">
+                    Powered by <a href="http://wordpress.org/" target="_blank">WordPress</a>. Designed by <a href="http://www.mageewp.com/" target="_blank">Magee Themes</a>.                    </div>
+                    
+                </div>
+                <div class="copyright">Copyright © 2019 iD-Lab. All Rights Reserved.</div>
+            </div>          
+        </footer>
+    </div>  
+    <!-- ngg_resource_manager_marker --><script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/admin-bar.min.js?ver=5.5.3' id='admin-bar-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/bb-plugin/js/jquery.fitvids.min.js?ver=1.2' id='jquery-fitvids-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/uploads/bb-plugin/cache/11-layout.js?ver=c06689bb8303d50f8d9ca9b1e1d741a0' id='fl-builder-layout-11-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/bootstrap/js/bootstrap.min.js?ver=3.3.4' id='bootstrap-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/dist/vendor/moment.min.js?ver=2.26.0' id='moment-js'></script>
+<script type='text/javascript' id='moment-js-after'>
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+</script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/js/magee-shortcodes.js?ver=1.6.0' id='magee-main-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/js/magee-modal.js?ver=1.6.0' id='magee-modal-js'></script>
+<script type='text/javascript' id='ngg_common-js-extra'>
+/* <![CDATA[ */
+
+var nextgen_lightbox_settings = {"static_path":"https:\/\/ikp.depaulidlab.com\/wp-content\/plugins\/nextgen-gallery\/products\/photocrati_nextgen\/modules\/lightbox\/static\/{placeholder}","context":"all_images"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_gallery_display/static/common.js?ver=3.3.20' id='ngg_common-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/lightbox_context.js?ver=3.3.20' id='ngg_lightbox_context-js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.1.0/jquery.browser.min.js?ver=3.3.20' id='fancybox-0-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/fancybox/jquery.easing-1.3.pack.js?ver=3.3.20' id='fancybox-1-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/fancybox/jquery.fancybox-1.3.4.pack.js?ver=3.3.20' id='fancybox-2-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/fancybox/nextgen_fancybox_init.js?ver=3.3.20' id='fancybox-3-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/YTPlayer/jquery.mb.YTPlayer.js?ver=5.5.3' id='alchem-bigvideo-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/jquery.prettyPhoto.js' id='alchem-prettyPhoto-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/jquery.parallax.js' id='alchem-parallax-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/owl-carousel/owl.carousel.min.js' id='owl.carousel-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/jquery-masonry/jquery.masonry.min.js' id='alchem-masonry-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/jquery.easing.min.js' id='alchem-easing-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/depaulidlab/js/jquery.waypoints.js?ver=2.0.5' id='magee-waypoints-js'></script>
+<script type='text/javascript' id='alchem-main-js-extra'>
+/* <![CDATA[ */
+var alchem_params = {"ajaxurl":"https:\/\/ikp.depaulidlab.com\/wp-admin\/admin-ajax.php","themeurl":"https:\/\/ikp.depaulidlab.com\/wp-content\/themes\/alchem","responsive":"yes","site_width":"1170px","sticky_header":"yes","show_search_icon":"yes","slider_autoplay":"yes","slideshow_speed":"3000","portfolio_grid_pagination_type":"pagination","blog_pagination_type":"pagination","global_color":"#21568f","admin_ajax_nonce":"b26bfae900","admin_ajax":"https:\/\/ikp.depaulidlab.com\/wp-admin\/admin-ajax.php","isMobile":"0","footer_sticky":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/main.js' id='alchem-main-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/jquery.infinitescroll.js' id='alchem-infinitescroll-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.5.3' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.5.3' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.13-9993131' id='mediaelement-vimeo-js'></script>
+<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/elfsight-youtube-gallery-cc/assets/elfsight-youtube-gallery.js?ver=3.2.0' id='elfsight-youtube-gallery-js'></script>
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://ikp.depaulidlab.com/wp-admin/about.php'><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li id='wp-admin-bar-about'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/about.php'>About WordPress</a></li></ul><ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' href='https://codex.wordpress.org/'>Documentation</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/'>Support</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://ikp.depaulidlab.com/wp-admin/'>Knowledge Portal</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-dashboard'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/'>Dashboard</a></li></ul><ul id='wp-admin-bar-appearance' class="ab-submenu"><li id='wp-admin-bar-themes'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/themes.php'>Themes</a></li><li id='wp-admin-bar-widgets'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/widgets.php'>Widgets</a></li><li id='wp-admin-bar-menus'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/nav-menus.php'>Menus</a></li><li id='wp-admin-bar-background' class="hide-if-customize"><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/themes.php?page=custom-background'>Background</a></li><li id='wp-admin-bar-header' class="hide-if-customize"><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/themes.php?page=custom-header'>Header</a></li></ul></div></li><li id='wp-admin-bar-customize' class="hide-if-no-customize"><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/customize.php?url=https%3A%2F%2Fikp.depaulidlab.com%2F'>Customize</a></li><li id='wp-admin-bar-updates'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/update-core.php' title='9 Plugin Updates, 4 Theme Updates'><span class="ab-icon"></span><span class="ab-label">13</span><span class="screen-reader-text">9 Plugin Updates, 4 Theme Updates</span></a></li><li id='wp-admin-bar-comments'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/edit-comments.php'><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 Comments in moderation</span></a></li><li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://ikp.depaulidlab.com/wp-admin/post-new.php'><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-new-content-default' class="ab-submenu"><li id='wp-admin-bar-new-post'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post-new.php'>Post</a></li><li id='wp-admin-bar-new-media'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/media-new.php'>Media</a></li><li id='wp-admin-bar-new-page'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post-new.php?post_type=page'>Page</a></li><li id='wp-admin-bar-new-amo-team'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post-new.php?post_type=amo-team'>Team Member</a></li><li id='wp-admin-bar-new-fl-builder-template'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post-new.php?post_type=fl-builder-template'>Template</a></li><li id='wp-admin-bar-new-magee_slider'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post-new.php?post_type=magee_slider'>Magee Slider</a></li><li id='wp-admin-bar-new-modula-gallery'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post-new.php?post_type=modula-gallery'>Modula</a></li><li id='wp-admin-bar-new-team_mf'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post-new.php?post_type=team_mf'>Team Manager</a></li><li id='wp-admin-bar-new-team_mf_team'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post-new.php?post_type=team_mf_team'>Shortcode</a></li><li id='wp-admin-bar-new-user'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/user-new.php'>User</a></li><li id='wp-admin-bar-new_content_smart_slider'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3#createslider'>Slider [Smart Slider 3]</a></li><li id='wp-admin-bar-wpforms'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpforms-builder'>WPForms</a></li></ul></div></li><li id='wp-admin-bar-edit'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/post.php?post=11&#038;action=edit'>Edit Page</a></li><li id='wp-admin-bar-smart_slider_3' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3'>Smart Slider</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-smart_slider_3-default' class="ab-submenu"><li id='wp-admin-bar-smart_slider_3_dashboard'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3'>Dashboard</a></li><li id='wp-admin-bar-smart_slider_3_create_slider'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3#createslider'>Create slider</a></li><li id='wp-admin-bar-smart_slider_3_edit' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Edit slider</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-smart_slider_3_edit-default' class="ab-submenu"><li id='wp-admin-bar-smart_slider_3_slider_4'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3&#038;nextendcontroller=slider&#038;nextendaction=edit&#038;sliderid=4&#038;groupID=0'>#4 - Demo Slider - Free Full-width</a></li><li id='wp-admin-bar-smart_slider_3_slider_3'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3&#038;nextendcontroller=slider&#038;nextendaction=edit&#038;sliderid=3&#038;groupID=0'>#3 - Slider</a></li><li id='wp-admin-bar-smart_slider_3_slider_2'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3&#038;nextendcontroller=slider&#038;nextendaction=edit&#038;sliderid=2&#038;groupID=0'>#2 - Slider</a></li><li id='wp-admin-bar-smart_slider_3_slider_1'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=smart-slider3&#038;nextendcontroller=slider&#038;nextendaction=edit&#038;sliderid=1&#038;groupID=0'>#1 - Sample Slider</a></li></ul></div></li></ul></div></li><li id='wp-admin-bar-wpseo-menu' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpseo_dashboard'><div id="yoast-ab-icon" class="ab-item yoast-logo svg"><span class="screen-reader-text">SEO</span></div><div class="wpseo-score-icon adminbar-seo-score na"><span class="adminbar-seo-score-text screen-reader-text">SEO score: Not available</span></div></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-menu-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-configuration-wizard'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpseo_configurator'>Configuration Wizard</a></li><li id='wp-admin-bar-wpseo-kwresearch' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Keyword Research</div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-kwresearch-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-kwresearchtraining'><a class='ab-item' href='https://yoa.st/wp-admin-bar?php_version=7.3&#038;platform=wordpress&#038;platform_version=5.5.3&#038;software=free&#038;software_version=15.2&#038;days_active=30plus&#038;user_language=en_US' target='_blank'>Keyword research training</a></li><li id='wp-admin-bar-wpseo-adwordsexternal'><a class='ab-item' href='https://yoa.st/keywordplanner' target='_blank'>Google Ads</a></li><li id='wp-admin-bar-wpseo-googleinsights'><a class='ab-item' href='https://yoa.st/google-trends' target='_blank'>Google Trends</a></li></ul></div></li><li id='wp-admin-bar-wpseo-analysis' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Analyze this page</div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-analysis-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-inlinks'><a class='ab-item' href='https://search.google.com/search-console/links/drilldown?resource_id=https%3A%2F%2Fikp.depaulidlab.com&#038;type=EXTERNAL&#038;target=https%3A%2F%2Fikp.depaulidlab.com%2F&#038;domain=' target='_blank'>Check links to this URL</a></li><li id='wp-admin-bar-wpseo-kwdensity'><a class='ab-item' href='http://www.zippy.co.uk/keyworddensity/index.php?url=https%3A%2F%2Fikp.depaulidlab.com%2F&#038;keyword=' target='_blank'>Check Keyphrase Density</a></li><li id='wp-admin-bar-wpseo-cache'><a class='ab-item' href='//webcache.googleusercontent.com/search?strip=1&#038;q=cache:https%3A%2F%2Fikp.depaulidlab.com%2F' target='_blank'>Check Google Cache</a></li><li id='wp-admin-bar-wpseo-structureddata'><a class='ab-item' href='https://search.google.com/test/rich-results?url=https%3A%2F%2Fikp.depaulidlab.com%2F' target='_blank'>Google Rich Results Test</a></li><li id='wp-admin-bar-wpseo-facebookdebug'><a class='ab-item' href='//developers.facebook.com/tools/debug/?q=https%3A%2F%2Fikp.depaulidlab.com%2F' target='_blank'>Facebook Debugger</a></li><li id='wp-admin-bar-wpseo-pinterestvalidator'><a class='ab-item' href='https://developers.pinterest.com/tools/url-debugger/?link=https%3A%2F%2Fikp.depaulidlab.com%2F' target='_blank'>Pinterest Rich Pins Validator</a></li><li id='wp-admin-bar-wpseo-htmlvalidation'><a class='ab-item' href='//validator.w3.org/check?uri=https%3A%2F%2Fikp.depaulidlab.com%2F' target='_blank'>HTML Validator</a></li><li id='wp-admin-bar-wpseo-cssvalidation'><a class='ab-item' href='//jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fikp.depaulidlab.com%2F' target='_blank'>CSS Validator</a></li><li id='wp-admin-bar-wpseo-pagespeed'><a class='ab-item' href='//developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fikp.depaulidlab.com%2F' target='_blank'>Google Page Speed Test</a></li><li id='wp-admin-bar-wpseo-google-mobile-friendly'><a class='ab-item' href='https://www.google.com/webmasters/tools/mobile-friendly/?url=https%3A%2F%2Fikp.depaulidlab.com%2F' target='_blank'>Mobile-Friendly Test</a></li></ul></div></li><li id='wp-admin-bar-wpseo-settings' class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>SEO Settings</div><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpseo-settings-default' class="ab-submenu"><li id='wp-admin-bar-wpseo-general'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpseo_dashboard'>General</a></li><li id='wp-admin-bar-wpseo-titles'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpseo_titles'>Search Appearance</a></li><li id='wp-admin-bar-wpseo-social'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpseo_social'>Social</a></li><li id='wp-admin-bar-wpseo-tools'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpseo_tools'>Tools</a></li><li id='wp-admin-bar-wpseo-licenses'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpseo_licenses'>Premium</a></li></ul></div></li></ul></div></li><li id='wp-admin-bar-fl-builder-frontend-edit-link'><a class='ab-item' href='https://ikp.depaulidlab.com/?fl_builder'><span class="ab-icon"></span>Beaver Builder <span class="fl-builder-admin-bar-status-dot" style="color:#6bc373; font-size:18px; line-height:1;">&bull;</span></a></li><li id='wp-admin-bar-wpforms-menu' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpforms-overview'>WPForms <div class="wpforms-menu-notification-counter"><span>4</span></div></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wpforms-menu-default' class="ab-submenu"><li id='wp-admin-bar-wpforms-notifications'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpforms-overview'>Notifications <div class="wpforms-menu-notification-indicator"></div></a></li><li id='wp-admin-bar-wpforms-forms'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpforms-overview'>All Forms</a></li><li id='wp-admin-bar-wpforms-add-new'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin.php?page=wpforms-builder'>Add New</a></li><li id='wp-admin-bar-wpforms-community'><a class='ab-item' href='https://www.facebook.com/groups/wpformsvip/' target='_blank' rel='noopener noreferrer'>Community</a></li><li id='wp-admin-bar-wpforms-support'><a class='ab-item' href='https://wpforms.com/docs/' target='_blank' rel='noopener noreferrer'>Support</a></li></ul></div></li><li id='wp-admin-bar-SG_CachePress_Supercacher_Purge' class="sg-cachepress-admin-bar-purge"><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/admin-ajax.php?action=admin_bar_purge_cache&#038;_wpnonce=ee6bccf401'>Purge SG Cache</a></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://ikp.depaulidlab.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div></li><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='https://ikp.depaulidlab.com/wp-admin/profile.php'>Howdy, <span class="display-name">Rakip</span><img alt='' src='https://secure.gravatar.com/avatar/b9a815283494af31dd6c8b4a9660b02d?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/b9a815283494af31dd6c8b4a9660b02d?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy'/></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='https://ikp.depaulidlab.com/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/b9a815283494af31dd6c8b4a9660b02d?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/b9a815283494af31dd6c8b4a9660b02d?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy'/><span class='display-name'>Rakip</span><span class='username'>rakip</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-admin/profile.php'>Edit Profile</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='https://ikp.depaulidlab.com/wp-login.php?action=logout&#038;_wpnonce=255fa7de04'>Log Out</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="https://ikp.depaulidlab.com/wp-login.php?action=logout&#038;_wpnonce=255fa7de04">Log Out</a>
+					</div>
+
+		</body>
+</html>
+`;
+
+const ikpCss=`
+CSS is contained in the HTML section.
+`;
+
+const ikpJs=`
+JavaScript is contained in the HTML section.
+`;
+
+export const homePage=[idLabInfo,idLabHtml,idLabCss,idLabJs,odiInfo,odiHtml,odiCss,odiJs,ikpInfo,ikpHtml,ikpCss,ikpJs];

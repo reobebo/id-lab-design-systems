@@ -14,6 +14,9 @@ import ColorsDesign from './ColorsDesign';
 import BackgroundsDesign from './BackgroundsDesign';
 import HeadingsDesign from './HeadingsDesign';
 import LogosDesign from './LogosDesign';
+import WhatWeDoDesign from './WhatWeDoDesign';
+import MeetOurTeamDesign from './MeetOurTeamDesign';
+import ContactUsDesign from './ContactUsDesign';
 
 const Sidebar = () => {
   let { app } = useParams();
@@ -75,6 +78,15 @@ const Sidebar = () => {
           </Route>
                 <Route path="/id-lab/backgrounds">
             <BackgroundsDesign />
+          </Route>
+                <Route path="/id-lab/what-we-do">
+            <WhatWeDoDesign />
+          </Route>
+          <Route path="/id-lab/meet-our-team">
+            <MeetOurTeamDesign />
+          </Route>
+          <Route path="/id-lab/contact-us">
+            <ContactUsDesign />
           </Route>
           
         </Switch>

@@ -7128,73 +7128,100 @@ No JavaScript
 /* Knowledge Portal */
 
 const ikpFooterHtml=`
- <!--Footer-->
- <?php 
- $display_footer_widgets    = alchem_option('display_footer_widgets'); 
- $footer_columns            = alchem_option('footer_columns'); 
-// $copyright_text            = alchem_option('copyright_text',''); 
- $tooltip_position          = alchem_option('footer_social_tooltip_position','top'); 
- $footer_special_effects    = alchem_option('footer_special_effects');
- $footer_class =  $footer_special_effects == 'footer_sticky'? 'fxd-footer':'';
- ?>
-        <footer class="<?php echo $footer_class;?>">
-        <?php if( $display_footer_widgets == 'yes' ):?>
-            <div class="footer-widget-area">
-                <div class="container alchem_display_footer_widgets">
-                    <div class="row">
-                    <?php 
-
-					for( $i=1;$i<=$footer_columns; $i++ ){
-					?>
-                    <div class="col-md-<?php echo 12/$footer_columns; ?>">
-                    <?php
-							if(is_active_sidebar("footer_widget_".$i)){
-	                           dynamic_sidebar("footer_widget_".$i);
-                               }
-							?>
-                    </div>
+<footer class="">
                     
-                    <?php }?>
-                    </div>
-                </div>
-            </div>
-            <?php endif; ?>
-            
-            <div class="footer-info-area">
-                <div class="contact-info">
-                        <h2>Contact Info</h2>
-                    <ul>
-                        <li>243 S WABASH AVE, CHICAGO, IL 60604, 7TH FLOOR</li>
-                        <li>(312) 362-1309</li>
-                        <li>depaulilab@gmail.com</li>
-                    </ul>
-                </div>
-              <div class="depaul-cdm">
-                    <img src="/wp-content/uploads/2019/03/depaul-logo-1.png" width="200" height="40"/>
-                </div>
-                <div class="container text-center alchem_footer_social_icon_1"> 
-                 <?php echo alchem_get_social('footer','footer-sns', $tooltip_position);?>
-                    <div class="clearfix"></div>
-                    <?php 
-					 wp_nav_menu(array('theme_location'=>'footer_menu','depth'=>1,'fallback_cb' =>false,'menu_class'=>'footer-links','link_before' => '', 'link_after' => '','items_wrap'=> '<ul id="%1$s" class="%2$s">%3$s</ul>'));
-					?>
-
-                    <div class="site-info" style="display:none;">
-                    <?php printf(__('Powered by <a href="%s" target="_blank">WordPress</a>. Designed by <a href="%s" target="_blank">Magee Themes</a>.','alchem'),esc_url('http://wordpress.org/'),esc_url('http://www.mageewp.com/'));?>
-                    </div>
-                    
-                </div>
-                <div class="copyright">Copyright © 2019 iD-Lab. All Rights Reserved.</div>
-            </div>          
-        </footer>
-    </div>  
-    <?php wp_footer(); ?>
-</body>
-</html>
+<div class="footer-info-area">
+    <div class="contact-info">
+            <h2>Contact Info</h2>
+        <ul>
+            <li>243 S WABASH AVE, CHICAGO, IL 60604, 7TH FLOOR</li>
+            <li>(312) 362-1309</li>
+            <li>depaulilab@gmail.com</li>
+        </ul>
+    </div>
+  <div class="depaul-cdm">
+        <img src="/wp-content/uploads/2019/03/depaul-logo-1.png" width="200" height="40"/>
+    </div>
+    <div class="container text-center alchem_footer_social_icon_1"> 
+     <ul class="footer-sns"><li><a target="_blank" rel="" href="https://www.linkedin.com/company/depaul-innovation-lab/" data-placement="top" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li><li><a target="_blank" rel="" href="mailto:depaulilab@gmail.com?subject=Email%20from%20iD-Lab%20Website" data-placement="top" data-toggle="tooltip" title="Email"><i class="fa fa-envelope"></i></a></li></ul>                    <div class="clearfix"></div>
+        
+        <div class="site-info" style="display:none;">
+        Powered by <a href="http://wordpress.org/" target="_blank">WordPress</a>. Designed by <a href="http://www.mageewp.com/" target="_blank">Magee Themes</a>.                    </div>
+        
+    </div>
+    <div class="copyright">Copyright © 2019 iD-Lab. All Rights Reserved.</div>
+</div>          
+</footer>
 `;
 
 const ikpFooterCss=`
-CSS comes from the Wordpress theme and the page builder.
+/* CSS comes from the Wordpress theme and the page builder so CSS code might not represnt everythging */
+footer .contact-info {    
+	width: 40%;
+    float: left;
+    margin: 0 0 0 5%;
+}
+footer .contact-info h2 {
+    font-family: 'avenir-next-bold-webfont', sans-serif;
+    text-transform: none;
+    font-size: 2.2em;
+}
+footer .contact-info ul {
+	list-style: none;
+    font-size: 1.2em;
+	padding:0;
+	margin:0;
+}
+footer .depaul-cdm {
+	text-align: right;
+    width: 40%;
+    float: right;
+    margin: 1.3% 5% 0 0;
+}
+footer .alchem_footer_social_icon_1 {width: 100%;display: inline-block;}
+footer .alchem_footer_social_icon_1 ul.footer-sns {margin-bottom:0;}
+footer .copyright {text-align:center;}
+footer .footer-info-area {
+    background-color: #192f48;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 919px) {
+	.wrapper {overflow:hidden;}
+	.overlay .main-header .site-name, .overlay .main-header .site-tagline, .overlay .main-header .site-nav-toggle {color: #000 !important;}
+	footer .footer-info-area {
+		background-color: #192f48;
+		float: unset;
+		margin: 0;
+		padding: 40px 5% 0;
+	}
+	.alumni-container, 
+	.alumni-faculty .alumni {
+    	width: 100%;
+	}
+	.alumni-faculty .column1 {
+		margin-left: 0px;
+	}
+	.alumni-faculty .column2 {
+		padding: 0;
+		padding-top: 0;
+		margin-right: 0px;
+		margin-left: 0;
+	}
+	.alumni-faculty .faculty {
+		padding-top:15px;
+		padding-left:0;
+		width: 100%;
+		float:right
+  }	
+  
+  footer .contact-info {width: 100%;}
+	footer .depaul-cdm {
+		width: 100%;
+    	margin: 6% 0;
+    	text-align: center;
+	}
+
 `;
 
 const ikpFooterJs=`
@@ -7207,4 +7234,4 @@ No JavaScript
 
 
 
-export const idLabFooter=[idLabFooterHtml,idLabFooterCss,idLabFooterJs,odiFooterHtml,odiFooterCss,odiFooterJs];
+export const idLabFooter=[idLabFooterHtml,idLabFooterCss,idLabFooterJs,odiFooterHtml,odiFooterCss,odiFooterJs,ikpFooterHtml,ikpFooterCss,ikpFooterJs];

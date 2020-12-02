@@ -3,28 +3,42 @@
   padding: 0;
 }
 
+.App {
+  height: 100vh;
+}
+
 h1 {
   margin-top: 2%;
   text-align: center;
 }
 
+.topbar-image {
+  width: 30px;
+  text-align: left;
+  margin: 2rem 3rem 3rem 6.2rem;
+}
+
+.topnav {
+  padding: 3rem 0 0 0;
+}
+
 img {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: image;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3%;
   margin-top: 3%;
+}
+
+.component-image {
   width: 70%;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header header" "nav image image" "nav content content" "nav content content";
+      grid-template-areas: "nav header header" "nav content content" "nav content content" "nav content content";
   -ms-grid-columns: 200px 1fr 200px;
       grid-template-columns: 200px 1fr 200px;
   -ms-grid-rows: auto 1fr auto;
@@ -33,26 +47,58 @@ img {
   height: 100vh;
 }
 
+.icon-images {
+      grid-template-areas: "icon icon" "icon icon" "icon icon" "icon icon";
+}
+
 .sidebar {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
+  height: 101vh;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
   -ms-grid-column: 1;
   grid-area: nav;
-  background-color: #1e222c;
+  background-color: #001a2c;
   color: #fff;
 }
 
+.sidebar h4 {
+  font-size: 1.4rem;
+}
+
+.sidebar li {
+  padding-top: 8px;
+}
+
 .sidebar li a {
+  text-decoration: none;
+  font-weight: bolder;
   color: #fff;
 }
 
 .sidebar li a:hover {
-  background-color: #555;
+  border-bottom: 4px solid #0077e0;
   color: white;
 }
 
+.nav-items {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.right-side {
+  grid-area: border;
+  background-color: #001a2c;
+}
+
 .welcome-header {
-  background-color: red;
+  background-color: #f0f0f0;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: content;
+  background-image: url("../img/background-5.png");
 }
 
 .sidebar-list {
@@ -60,13 +106,29 @@ img {
 }
 
 .topbar {
-  background-color: #1e222c;
+  background-color: #001a2c;
   color: #fff;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: header;
   padding-bottom: 1rem;
+}
+
+.topbar li {
+  float: left;
+  width: 33%;
+}
+
+.topbar li a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.topbar li a:hover {
+  border-bottom: 4px solid #0077e0;
+  color: white;
 }
 
 .topbar-list {
@@ -80,25 +142,39 @@ img {
   margin-left: 20vw;
 }
 
-.topbar-list li {
-  float: left;
-  padding-right: 20px;
-}
-
 .tab-content {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: content;
   margin: auto;
   width: 70%;
-  border: 3px solid green;
+  border: 3px solid #001a2c;
   padding: 10px;
 }
 
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: content;
+  background-color: #f0f0f0;
+  height: 90vh;
+  overflow: scroll;
+  width: 100%;
+}
+
 .code-content {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: content;
   background-color: #f1f1f1;
+  height: 90vh;
+  overflow: scroll;
 }
 
 code {
@@ -123,5 +199,14 @@ code {
 .copy-button:hover {
   -webkit-box-shadow: 0 0 o 0 blue inset, 0 0 10px 4px blue;
           box-shadow: 0 0 o 0 blue inset, 0 0 10px 4px blue;
+}
+
+.headings-text {
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  content: "\005E";
 }
 /*# sourceMappingURL=main.css.map */
