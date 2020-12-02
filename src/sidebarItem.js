@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import FooterDesignCode from './footerDesignCode';
-import Welcome from './welcome';
+import Welcome from './Welcome';
 
 const sidebarItem = (props) => {
     return (
