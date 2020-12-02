@@ -11,6 +11,10 @@ h1 {
   margin-top: 2%;
   text-align: center;
 }
+h4 {
+  margin-top: 2%;
+  text-align: center;
+}
 
 .topbar-image {
   width: 30px;
@@ -99,6 +103,8 @@ img {
   -ms-grid-column-span: 2;
   grid-area: content;
   background-image: url("../img/background-4.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .sidebar-list {
@@ -211,8 +217,8 @@ span {
 }
 
 .welcome-buttons-section {
-  width: 50%;
-  margin: 30vh auto;
+  width: 30%;
+  margin: 15vh auto auto 36vw;
 }
 
 .welcome-buttons {

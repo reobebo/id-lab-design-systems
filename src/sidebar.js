@@ -17,6 +17,7 @@ import LogosDesign from './LogosDesign';
 import WhatWeDoDesign from './WhatWeDoDesign';
 import MeetOurTeamDesign from './MeetOurTeamDesign';
 import ContactUsDesign from './ContactUsDesign';
+import HomePageDesign from './HomePageDesign';
 
 const Sidebar = () => {
   let { app } = useParams();
@@ -78,6 +79,9 @@ const Sidebar = () => {
           </Route>
                 <Route path="/id-lab/backgrounds">
             <BackgroundsDesign />
+          </Route>
+          <Route path="/id-lab/home">
+            <HomePageDesign />
           </Route>
                 <Route path="/id-lab/what-we-do">
             <WhatWeDoDesign />
@@ -149,6 +153,9 @@ const Sidebar = () => {
               <Route path="/odi/backgrounds">
             <BackgroundsDesign />
           </Route>
+          <Route path="/odi/home">
+            <HomePageDesign />
+          </Route>
           
         </Switch>
     
@@ -211,6 +218,10 @@ const Sidebar = () => {
           </Route>
               <Route path="/knowledge-portal/backgrounds">
             <BackgroundsDesign />
+          </Route>
+         
+              <Route path="/knowledge-portal/home">
+            <HomePageDesign />
           </Route>
         </Switch>
     

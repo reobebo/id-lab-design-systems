@@ -25,9 +25,9 @@ function App() {
     <Topbar/>
     <Switch>
       <Redirect exact from="/" to="/id-lab/welcome" />
-          <Route path="/id-lab/welcome" component={(props) =><Welcome {...props} name="Welcome To The ID Lab Website" />}/>
-          <Route path="/odi/welcome" component={(props) => <Welcome {...props} name="Welcome To The ODI Website" />}/>
-          <Route path="/knowledge-portal/welcome" component={(props) =><Welcome {...props} name="Welcome To The Knowledge Portal Website" />}/>
+          <Route path="/id-lab/welcome" component={(props) =><Welcome {...props} name="Welcome To The ID Lab Website" description="Click On Any Of The Three Buttons To Learn More!" />}/>
+          <Route path="/odi/welcome" component={(props) => <Welcome {...props} name="Welcome To The ODI Website" description="Click On Any Of The Three Buttons To Learn More!"/>}/>
+          <Route path="/knowledge-portal/welcome" component={(props) =><Welcome {...props} name="Welcome To The Knowledge Portal Website" description="Click On Any Of The Three Buttons To Learn More!" />}/>
         </Switch>
          <Sidebar/>
           <Switch>

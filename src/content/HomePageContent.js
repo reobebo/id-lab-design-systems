@@ -1,7 +1,7 @@
 /* ID Lab Home Page */
-idLabInfo = `This is the main ID Lab website home page.  NOTE: JavaScript is included on the main HTML page`;
+const idLabInfo = `This is the main ID Lab website home page.  NOTE: JavaScript is included on the main HTML page`;
 
-idLabHtml=`
+const idLabHtml=`
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -458,7 +458,7 @@ idLabHtml=`
       </html>
 `
 
-idLabCss=`
+const idLabCss=`
 /*----------------------------------------------------------------------------------------------------------------------
 # Home Page
 ----------------------------------------------------------------------------------------------------------------------*/
@@ -828,15 +828,15 @@ idLabCss=`
 
 `;
 
-idLabJs=`
+const idLabJs=`
 JavaScript is contained in the HTML Section
 `
 
 /* odi homepage */
 
-odiInfo=`This is the ODI 2020 Homepage which contains sections such as Home, About, Highlights,Sponsorship, Speakers, Location, and Schedule.  NOTE: JavaScript is included in the main HTML Page`
+const odiInfo=`This is the ODI 2020 Homepage which contains sections such as Home, About, Highlights,Sponsorship, Speakers, Location, and Schedule.  NOTE: JavaScript is included in the main HTML Page`
 
-odiHtml=`
+const odiHtml=`
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -3333,7 +3333,7 @@ odiHtml=`
 </html>
 `;
 
-odiCss =`
+const odiCss =`
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Creative v6.0.2 (https://startbootstrap.com/themes/creative)
@@ -10139,7 +10139,7 @@ header.masthead h1 {
 }
 `;
 
-odiJs=`
+const odiJs=`
 /*!
     * Start Bootstrap - Creative v6.0.2 (https://startbootstrap.com/themes/creative)
     * Copyright 2013-2020 Start Bootstrap

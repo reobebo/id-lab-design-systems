@@ -1,6 +1,5 @@
-import { render } from '@testing-library/react';
+
 import React,{useState} from 'react';
-import { Redirect } from 'react-router-dom';
 import './scss/main.css';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -11,6 +10,7 @@ import Button from '@material-ui/core/Button';
 
 const Welcome = (props) => {
   const [open, setOpen] = useState(false);
+ 
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -19,15 +19,33 @@ const Welcome = (props) => {
   const handleClose = () => {
     setOpen(false);
   };
+  const [openComponents, setOpenComponents] = useState(false);
+
+  const handleClickOpenComponent = () => {
+    setOpenComponents(true);
+  };
+
+  const handleCloseComponent = () => {
+    setOpenComponents(false);
+  };
+  const [openPages, setOpenPages] = useState(false);
+
+  const handleClickOpenPages = () => {
+    setOpenPages(true);
+  };
+
+  const handleClosePages = () => {
+    setOpenPages(false);
+  };
  
     return (
         <header className="welcome-header">
         <h1>{props.name}</h1>
         <h4>{props.description}</h4>
         <div className="welcome-buttons-section">
-          <button onClick={handleClickOpen} className="welcome-buttons">
+          <Button onClick={handleClickOpen} className="welcome-buttons">
         <a className="btn btn-outline-blue btn-xl text-uppercase resp-button">Foundations</a>
-        </button>
+        </Button>
         <Dialog
         open={open}
         onClose={handleClose}
@@ -46,12 +64,48 @@ const Welcome = (props) => {
           </Button>
         </DialogActions>
       </Dialog>
-        <button className="welcome-buttons">
-         <a target="_blank" className="btn btn-outline-blue btn-xl text-uppercase resp-button">Components</a>
-         </button>
-         <button className="welcome-buttons">
-         <a target="_blank" className="btn btn-outline-blue btn-xl text-uppercase resp-button">Pages</a>
-         </button>
+        <Button onClick={handleClickOpenComponent} className="welcome-buttons">
+         <a className="btn btn-outline-blue btn-xl text-uppercase resp-button">Components</a>
+         </Button>
+         <Dialog
+        open={openComponents}
+        onClose={handleCloseComponent}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{"What Are Components?"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+          Componenets are the reusable building blocks of my design system. Each component meets a specific interaction or UI need, and has been specifically created to work together to create patterns and intuitive user experiences.This includes guidance on accordions, buttons, cards and navigation
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseComponent} color="primary">
+            Got It!
+          </Button>
+        </DialogActions>
+      </Dialog>
+         <Button onClick={handleClickOpenPages} className="welcome-buttons">
+         <a  className="btn btn-outline-blue btn-xl text-uppercase resp-button">Pages</a>
+         </Button>
+         <Dialog
+        open={openPages}
+        onClose={handleClosePages}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{"What Are Pages?"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+          Pages are reusable combinations of components that solve common user problems. These best practice solutions help users achieve their goals and help ensure consistency across experiences.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClosePages} color="primary">
+            Got It!
+          </Button>
+        </DialogActions>
+      </Dialog>
          </div>
       </header>
     )
