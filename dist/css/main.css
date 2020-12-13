@@ -161,7 +161,7 @@ img {
   -ms-grid-column-span: 2;
   grid-area: content;
   background-color: #f0f0f0;
-  height: 90vh;
+  height: 100%;
   overflow: scroll;
   width: 100%;
 }

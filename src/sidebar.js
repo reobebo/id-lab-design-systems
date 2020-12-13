@@ -18,6 +18,10 @@ import WhatWeDoDesign from './WhatWeDoDesign';
 import MeetOurTeamDesign from './MeetOurTeamDesign';
 import ContactUsDesign from './ContactUsDesign';
 import HomePageDesign from './HomePageDesign';
+import BannersDesign from './BannersDesign';
+import ButtonsDesign from './ButtonsDesign';
+import PeopleDesign from './PeopleDesign';
+import NavigationDesign from './NavigationDesign';
 
 const Sidebar = () => {
   let { app } = useParams();
@@ -33,12 +37,11 @@ const Sidebar = () => {
 
             <ul className="sidebar-list">
             <Sidebaritem link="/id-lab/buttons" name="Buttons"/>
-            <Sidebaritem link="/id-lab/links" name="Links"/>
             <Sidebaritem link="/id-lab/headings" name="Headings"/>
             <Sidebaritem link="/id-lab/icons" name="Icons"/>
             <Sidebaritem link="/id-lab/logos" name="Logos"/>
              <Sidebaritem link="/id-lab/colors" name="Colors"/>
-            <Sidebaritem link="/id-lab/typography-and-fonts" name="Typography And Fonts"/>
+            <Sidebaritem link="/id-lab/typography-and-fonts" name="Typography"/>
             <Sidebaritem link="/id-lab/backgrounds" name="Backgrounds"/>
             </ul>
             <br/>
@@ -62,14 +65,27 @@ const Sidebar = () => {
             </nav>
               </div>
             <Switch>
-                  <Route path="/id-lab/headings">
-            <HeadingsDesign />
+            <Route exact path="/id-lab/buttons">
+            <ButtonsDesign />
+          </Route>
+       
+            <Route exact path="/id-lab/headings">
+            <HeadingsDesign app="id-lab"/>
           </Route>
            <Route path="/id-lab/logos">
             <LogosDesign />
           </Route>
                  <Route path="/id-lab/colors">
             <ColorsDesign />
+          </Route>
+          <Route path="/id-lab/banners">
+            <BannersDesign app="id-lab"/>
+          </Route>
+          <Route exact path="/id-lab/people">
+            <PeopleDesign app="id-lab" />
+          </Route>
+          <Route exact path="/id-lab/navigation">
+            <NavigationDesign app="id-lab" />
           </Route>
           <Route path="/id-lab/footers">
             <FooterDesignCode app="id-lab" />
@@ -81,7 +97,7 @@ const Sidebar = () => {
             <BackgroundsDesign />
           </Route>
           <Route path="/id-lab/home">
-            <HomePageDesign />
+            <HomePageDesign app="id-lab" />
           </Route>
                 <Route path="/id-lab/what-we-do">
             <WhatWeDoDesign />
@@ -89,9 +105,9 @@ const Sidebar = () => {
           <Route path="/id-lab/meet-our-team">
             <MeetOurTeamDesign />
           </Route>
-          <Route path="/id-lab/contact-us">
+           <Route path="/id-lab/contact-us">
             <ContactUsDesign />
-          </Route>
+            </Route> 
           
         </Switch>
     
@@ -108,12 +124,11 @@ const Sidebar = () => {
 
             <ul className="sidebar-list">
             <Sidebaritem link="/odi/buttons" name="Buttons"/>
-            <Sidebaritem link="/odi/links" name="Links"/>
             <Sidebaritem link="/odi/headings" name="Headings"/>
             <Sidebaritem link="/odi/icons" name="Icons"/>
             <Sidebaritem link="/odi/logos" name="Logos"/>
              <Sidebaritem link="/odi/colors" name="Colors"/>
-            <Sidebaritem link="/odi/typography-and-fonts" name="Typography And Fonts"/>
+            <Sidebaritem link="/odi/typography-and-fonts" name="Typography"/>
             <Sidebaritem link="/odi/backgrounds" name="Backgrounds"/>
             </ul>
             <br/>
@@ -135,6 +150,9 @@ const Sidebar = () => {
             </nav>
               </div>
             <Switch>
+            <Route exact path="/odi/buttons">
+            <ButtonsDesign app="odi"/>
+          </Route>
                <Route path="/odi/headings">
             <HeadingsDesign />
           </Route>
@@ -147,6 +165,15 @@ const Sidebar = () => {
           <Route path="/odi/typography-and-fonts">
             <TypeographyAndFont />
           </Route>
+          <Route path="/odi/banners">
+            <BannersDesign app="odi"/>
+          </Route>
+          <Route exact path="/odi/people">
+            <PeopleDesign app="odi"/>
+          </Route>
+          <Route exact path="/odi/navigation">
+            <NavigationDesign app="odi" />
+          </Route>
           <Route path="/odi/footers">
             <FooterDesignCode app="odi" />
           </Route>
@@ -154,7 +181,7 @@ const Sidebar = () => {
             <BackgroundsDesign />
           </Route>
           <Route path="/odi/home">
-            <HomePageDesign />
+            <HomePageDesign app="odi"/>
           </Route>
           
         </Switch>
@@ -171,19 +198,17 @@ const Sidebar = () => {
 
             <ul className="sidebar-list">
             <Sidebaritem link="/knowledge-portal/buttons" name="Buttons"/>
-            <Sidebaritem link="/knowledge-portal/links" name="Links"/>
             <Sidebaritem link="/knowledge-portal/headings" name="Headings"/>
             <Sidebaritem link="/knowledge-portal/icons" name="Icons"/>
             <Sidebaritem link="/knowledge-portal/logos" name="Logos"/>
              <Sidebaritem link="/knowledge-portal/colors" name="Colors"/>
-            <Sidebaritem link="/knowledge-portal/typography-and-fonts" name="Typography And Fonts"/>
+            <Sidebaritem link="/knowledge-portal/typography-and-fonts" name="Typography"/>
             <Sidebaritem link="/knowledge-portal/backgrounds" name="Backgrounds"/>
             </ul>
             <br/>
              <h4>Components</h4>
             <ul className="sidebar-list">
             <Sidebaritem link="/knowledge-portal/banners" name="Banners"/>
-            <Sidebaritem link="/knowledge-portal/people" name="People"/>
             <Sidebaritem link="/knowledge-portal/navigation" name="Navigation"/>
             <Sidebaritem link="/knowledge-portal/footers" name="Footer"/>
          
@@ -200,18 +225,26 @@ const Sidebar = () => {
         
       </div>
          <Switch>
+         <Route exact path="/id-lab/buttons">
+            <ButtonsDesign app="knowlege-portal"/>
+          </Route>
             <Route path="/knowledge-portal/logos">
             <LogosDesign />
           </Route>
             <Route path="/knowledge-portal/headings">
             <HeadingsDesign />
           </Route>
-          
               <Route path="/knowledge-portal/colors">
             <ColorsDesign />
           </Route>
            <Route path="/knowledge-portal/typography-and-fonts">
             <TypeographyAndFont />
+          </Route>
+          <Route path="/knowledge-portal/banners">
+            <BannersDesign app="knowlege-portal"/>
+          </Route>
+          <Route exact path="/knowledge-portal/navigation">
+            <NavigationDesign app="knowledge-portal" />
           </Route>
           <Route path="/knowledge-portal/footers">
             <FooterDesignCode app="knowlege-portal" />
@@ -219,7 +252,6 @@ const Sidebar = () => {
               <Route path="/knowledge-portal/backgrounds">
             <BackgroundsDesign />
           </Route>
-         
               <Route path="/knowledge-portal/home">
             <HomePageDesign />
           </Route>

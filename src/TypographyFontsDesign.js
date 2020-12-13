@@ -10,7 +10,7 @@ function TypographyFontsDesign() {
     
          <div className="content">
             <h1>
-            Typography And Fonts 
+            Typography 
             </h1>
             <br/>
              <Tabs className="tab-content">

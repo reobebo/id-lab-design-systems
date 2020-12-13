@@ -24,14 +24,15 @@ function App() {
     <Router>
     <Topbar/>
     <Switch>
-      <Redirect exact from="/" to="/id-lab/welcome" />
-          <Route path="/id-lab/welcome" component={(props) =><Welcome {...props} name="Welcome To The ID Lab Website" description="Click On Any Of The Three Buttons To Learn More!" />}/>
-          <Route path="/odi/welcome" component={(props) => <Welcome {...props} name="Welcome To The ODI Website" description="Click On Any Of The Three Buttons To Learn More!"/>}/>
-          <Route path="/knowledge-portal/welcome" component={(props) =><Welcome {...props} name="Welcome To The Knowledge Portal Website" description="Click On Any Of The Three Buttons To Learn More!" />}/>
+      <Redirect exact from="/" to="/id-lab" />
+          <Route exact path="/id-lab"   children={(props) =><Welcome {...props} name="Welcome To The ID Lab Website" description="Click On Any Of The Three Buttons To Learn More!" />}/>
+          <Route exact path="/odi"   children={(props) => <Welcome {...props} name="Welcome To The ODI Website" description="Click On Any Of The Three Buttons To Learn More!"/>}/>
+          <Route exact path="/knowledge-portal"   children={(props) =><Welcome {...props} name="Welcome To The Knowledge Portal Website" description="Click On Any Of The Three Buttons To Learn More!" />}/>
         </Switch>
-         <Sidebar/>
+         
           <Switch>
-             <Route path="/:app" children={(props) => <><Sidebar {...props}/></>}/>
+             <Route path="/:app" component={(props) => <><Sidebar {...props}/></>}/>
+             
           </Switch>
   </Router>
   
