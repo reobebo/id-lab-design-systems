@@ -11,10 +11,6 @@ h1 {
   margin-top: 2%;
   text-align: center;
 }
-h4 {
-  margin-top: 2%;
-  text-align: center;
-}
 
 .topbar-image {
   width: 30px;
@@ -51,8 +47,68 @@ img {
   height: 100vh;
 }
 
+.icon-title {
+  text-align: center;
+}
+
 .icon-images {
-      grid-template-areas: "icon icon" "icon icon" "icon icon" "icon icon";
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "icon1 icon2 icon3" "icon4 icon5 icon6" "icon7 icon8 icon9";
+}
+
+.icon1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: icon1;
+}
+
+.icon2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: icon2;
+}
+
+.icon3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: icon3;
+}
+
+.icon4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: icon4;
+}
+
+.icon5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: icon5;
+}
+
+.icon6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: icon6;
+}
+
+.icon7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: icon7;
+}
+
+.icon8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: icon8;
+}
+
+.icon9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: icon9;
 }
 
 .sidebar {
@@ -103,8 +159,6 @@ img {
   -ms-grid-column-span: 2;
   grid-area: content;
   background-image: url("../img/background-4.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .sidebar-list {
@@ -167,7 +221,7 @@ img {
   -ms-grid-column-span: 2;
   grid-area: content;
   background-color: #f0f0f0;
-  height: 90vh;
+  height: 100%;
   overflow: scroll;
   width: 100%;
 }
@@ -218,7 +272,7 @@ span {
 
 .welcome-buttons-section {
   width: 30%;
-  margin: 15vh auto auto 36vw;
+  margin: 30vh auto;
 }
 
 .welcome-buttons {

@@ -47,15 +47,43 @@ img {
 
   height: 100vh;
 }
-
-.icon-images {
-  grid-template-areas:
-    "icon icon"
-    "icon icon"
-    "icon icon"
-    "icon icon";
+.icon-title {
+  text-align: center;
 }
-
+.icon-images {
+  display: grid;
+  grid-template-areas:
+    "icon1 icon2 icon3"
+    "icon4 icon5 icon6"
+    "icon7 icon8 icon9";
+}
+.icon1 {
+  grid-area: icon1;
+}
+.icon2 {
+  grid-area: icon2;
+}
+.icon3 {
+  grid-area: icon3;
+}
+.icon4 {
+  grid-area: icon4;
+}
+.icon5 {
+  grid-area: icon5;
+}
+.icon6 {
+  grid-area: icon6;
+}
+.icon7 {
+  grid-area: icon7;
+}
+.icon8 {
+  grid-area: icon8;
+}
+.icon9 {
+  grid-area: icon9;
+}
 // sidebar css
 .sidebar {
   height: 101vh;
