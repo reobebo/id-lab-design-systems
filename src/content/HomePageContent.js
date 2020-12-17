@@ -10284,6 +10284,7 @@ const odiJs=`
 `;
 
 const ikpInfo=`
+This is the home page of the Knowledge Portal website. Note the code is pulled from a page builder from WordPress so the code will not be accurate.
 `;
 
 const ikpHtml=`

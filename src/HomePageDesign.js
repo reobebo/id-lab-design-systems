@@ -36,7 +36,7 @@ function HomePageDesign(props) {
                 <TabPanel>
                    
                    <div className="code-content">
-                     <CopyToClipboard text={homePage[1].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={homePage[1].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -47,7 +47,7 @@ function HomePageDesign(props) {
                 </TabPanel>
                 <TabPanel>
                      <div className="code-content">
-                     <CopyToClipboard text={homePage[2].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={homePage[2].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
                 <code>
@@ -93,7 +93,7 @@ function HomePageDesign(props) {
                   <TabPanel>
                      
                      <div className="code-content">
-                       <CopyToClipboard text={homePage[5].split("\n").map((i,key) => { return String(i+"\n")})}>
+                       <CopyToClipboard text={homePage[5].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                          <button className="copy-button">Copy to clipboard</button>
                          </CopyToClipboard>
                   <code>
@@ -104,7 +104,7 @@ function HomePageDesign(props) {
                   </TabPanel>
                   <TabPanel>
                        <div className="code-content">
-                       <CopyToClipboard text={homePage[6].split("\n").map((i,key) => { return String(i+"\n")})}>
+                       <CopyToClipboard text={homePage[6].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                      <button className="copy-button">Copy to clipboard</button>
                      </CopyToClipboard>
                   <code>
@@ -115,6 +115,9 @@ function HomePageDesign(props) {
                   </div>
                   </TabPanel>
                   <TabPanel>
+                  <CopyToClipboard text={homePage[7].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
+                       <button className="copy-button">Copy to clipboard</button>
+                       </CopyToClipboard>
                     <div className="code-content">
                     <code>{homePage[7]}</code>
                   </div>
@@ -150,7 +153,7 @@ function HomePageDesign(props) {
                 <TabPanel>
                    
                    <div className="code-content">
-                     <CopyToClipboard text={homePage[9].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={homePage[9].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -161,7 +164,7 @@ function HomePageDesign(props) {
                 </TabPanel>
                 <TabPanel>
                      <div className="code-content">
-                     <CopyToClipboard text={homePage[10].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={homePage[10].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>

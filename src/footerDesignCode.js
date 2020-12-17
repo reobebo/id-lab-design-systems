@@ -26,7 +26,7 @@ const FooterDesignCode = (props) => {
             <TabPanel>
                
                <div className="code-content">
-                 <CopyToClipboard text={idLabFooter[0].split("\n").map((i,key) => { return String(i+"\n")})}>
+                 <CopyToClipboard text={idLabFooter[0].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
             <code>
@@ -37,7 +37,7 @@ const FooterDesignCode = (props) => {
             </TabPanel>
             <TabPanel>
                  <div className="code-content">
-                 <CopyToClipboard text={idLabFooter[1].split("\n").map((i,key) => { return String(i+"\n")})}>
+                 <CopyToClipboard text={idLabFooter[1].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                <button className="copy-button">Copy to clipboard</button>
                </CopyToClipboard>
             <code>
@@ -72,7 +72,7 @@ const FooterDesignCode = (props) => {
               <TabPanel>
                  
                  <div className="code-content">
-                   <CopyToClipboard text={idLabFooter[3].split("\n").map((i,key) => { return String(i+"\n")})}>
+                   <CopyToClipboard text={idLabFooter[3].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                      <button className="copy-button">Copy to clipboard</button>
                      </CopyToClipboard>
               <code>
@@ -83,7 +83,7 @@ const FooterDesignCode = (props) => {
               </TabPanel>
               <TabPanel>
                    <div className="code-content">
-                   <CopyToClipboard text={idLabFooter[4].split("\n").map((i,key) => { return String(i+"\n")})}>
+                   <CopyToClipboard text={idLabFooter[4].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                  <button className="copy-button">Copy to clipboard</button>
                  </CopyToClipboard>
               <code>
@@ -118,7 +118,7 @@ const FooterDesignCode = (props) => {
             <TabPanel>
                
                <div className="code-content">
-                 <CopyToClipboard text={idLabFooter[6].split("\n").map((i,key) => { return String(i+"\n")})}>
+                 <CopyToClipboard text={idLabFooter[6].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
             <code>
@@ -129,7 +129,7 @@ const FooterDesignCode = (props) => {
             </TabPanel>
             <TabPanel>
                  <div className="code-content">
-                 <CopyToClipboard text={idLabFooter[7].split("\n").map((i,key) => { return String(i+"\n")})}>
+                 <CopyToClipboard text={idLabFooter[7].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
             <code>

@@ -24,7 +24,7 @@ export default function BannersDesign(props) {
               <TabPanel>
                  
                  <div className="code-content">
-                   <CopyToClipboard text={banners[0].split("\n").map((i,key) => { return String(i+"\n")})}>
+                   <CopyToClipboard text={banners[0].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                      <button className="copy-button">Copy to clipboard</button>
                      </CopyToClipboard>
               <code>
@@ -35,7 +35,7 @@ export default function BannersDesign(props) {
               </TabPanel>
               <TabPanel>
                    <div className="code-content">
-                   <CopyToClipboard text={banners[1].split("\n").map((i,key) => { return String(i+"\n")})}>
+                   <CopyToClipboard text={banners[1].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                  <button className="copy-button">Copy to clipboard</button>
                  </CopyToClipboard>
               <code>
@@ -65,7 +65,7 @@ export default function BannersDesign(props) {
                 <TabPanel>
                    
                    <div className="code-content">
-                     <CopyToClipboard text={banners[2].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={banners[2].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -76,7 +76,7 @@ export default function BannersDesign(props) {
                 </TabPanel>
                 <TabPanel>
                      <div className="code-content">
-                     <CopyToClipboard text={banners[3].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={banners[3].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
                 <code>
@@ -107,7 +107,7 @@ export default function BannersDesign(props) {
               <TabPanel>
                  
                  <div className="code-content">
-                   <CopyToClipboard text={banners[4].split("\n").map((i,key) => { return String(i+"\n")})}>
+                   <CopyToClipboard text={banners[4].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                      <button className="copy-button">Copy to clipboard</button>
                      </CopyToClipboard>
               <code>
@@ -118,7 +118,7 @@ export default function BannersDesign(props) {
               </TabPanel>
               <TabPanel>
                    <div className="code-content">
-                   <CopyToClipboard text={banners[5].split("\n").map((i,key) => { return String(i+"\n")})}>
+                   <CopyToClipboard text={banners[5].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                      <button className="copy-button">Copy to clipboard</button>
                      </CopyToClipboard>
               <code>

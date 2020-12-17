@@ -3,20 +3,21 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import {buttons} from './content/ButtonsContent';
 import image from './img/id-lab-button.png';
-import odiImage from './img/odi-footer.png';
-import ikpImage from './img/ikp-footer.png';
+import odiImage from './img/odi-button.png';
+import ikpImage from './img/ikp-button.png';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ReactDOM from "react-dom";
+import Welcome from './Welcome';
 
 function buttonsDesign(props) {
     if(props.app==='id-lab'){
-      ReactDOM.render();
+     
         return (
             <div className="content">
                 <h1>
                 ID Lab: buttons 
             </h1>
-                <img className="component-image" src={image} alt="Footer for the main ID Lab Website"/>
+                <img src={image} alt="Footer for the main ID Lab Website"/>
                 <Tabs className="tab-content">
                 <TabList>
                   <Tab>HTML</Tab>
@@ -26,7 +27,7 @@ function buttonsDesign(props) {
                 <TabPanel>
                    
                    <div className="code-content">
-                     <CopyToClipboard text={buttons[0].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={buttons[0].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -37,7 +38,7 @@ function buttonsDesign(props) {
                 </TabPanel>
                 <TabPanel>
                      <div className="code-content">
-                     <CopyToClipboard text={buttons[1].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={buttons[1].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
                 <code>
@@ -56,7 +57,7 @@ function buttonsDesign(props) {
                   <h1>
                   ODI 2020: buttons 
               </h1>
-                  <img className="component-image" src={odiImage} alt="Footer for the main ID Lab Website"/>
+                  <img src={odiImage} alt="Footer for the main ID Lab Website"/>
                   <Tabs className="tab-content">
                   <TabList>
                     <Tab>HTML</Tab>
@@ -67,7 +68,7 @@ function buttonsDesign(props) {
                   <TabPanel>
                      
                      <div className="code-content">
-                       <CopyToClipboard text={buttons[2].split("\n").map((i,key) => { return String(i+"\n")})}>
+                       <CopyToClipboard text={buttons[2].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                          <button className="copy-button">Copy to clipboard</button>
                          </CopyToClipboard>
                   <code>
@@ -78,7 +79,7 @@ function buttonsDesign(props) {
                   </TabPanel>
                   <TabPanel>
                        <div className="code-content">
-                       <CopyToClipboard text={buttons[3].split("\n").map((i,key) => { return String(i+"\n")})}>
+                       <CopyToClipboard text={buttons[3].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                      <button className="copy-button">Copy to clipboard</button>
                      </CopyToClipboard>
                   <code>
@@ -92,13 +93,13 @@ function buttonsDesign(props) {
                 </Tabs>
                 
               </div>
-          )}else{
+          )}if(props.app==='knowledge-portal/buttons') {
           return(
              <div className="content">
                 <h1>
                 IKP: buttons 
             </h1>
-                <img className="component-image"  src={ikpImage} alt="Footer for the main ID Lab Website"/>
+                <img src={ikpImage} alt="Footer for the main ID Lab Website"/>
                 <Tabs className="tab-content">
                 <TabList>
                   <Tab>HTML</Tab>
@@ -109,7 +110,7 @@ function buttonsDesign(props) {
                 <TabPanel>
                    
                    <div className="code-content">
-                     <CopyToClipboard text={buttons[4].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={buttons[4].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -120,7 +121,7 @@ function buttonsDesign(props) {
                 </TabPanel>
                 <TabPanel>
                      <div className="code-content">
-                     <CopyToClipboard text={buttons[5].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={buttons[5].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -135,6 +136,10 @@ function buttonsDesign(props) {
               
             </div>
             
+          )
+        }else{
+          return(
+            <Welcome/>
           )
         }
 }

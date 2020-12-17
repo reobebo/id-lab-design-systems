@@ -25,7 +25,7 @@ function NavigationDesign(props) {
                 <TabPanel>
                    
                    <div className="code-content">
-                     <CopyToClipboard text={navigation[0].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={navigation[0].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -36,7 +36,7 @@ function NavigationDesign(props) {
                 </TabPanel>
                 <TabPanel>
                      <div className="code-content">
-                     <CopyToClipboard text={navigation[1].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={navigation[1].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
                 <code>
@@ -67,7 +67,7 @@ function NavigationDesign(props) {
                   <TabPanel>
                      
                      <div className="code-content">
-                       <CopyToClipboard text={navigation[2].split("\n").map((i,key) => { return String(i+"\n")})}>
+                       <CopyToClipboard text={navigation[2].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                          <button className="copy-button">Copy to clipboard</button>
                          </CopyToClipboard>
                   <code>
@@ -78,7 +78,7 @@ function NavigationDesign(props) {
                   </TabPanel>
                   <TabPanel>
                        <div className="code-content">
-                       <CopyToClipboard text={navigation[3].split("\n").map((i,key) => { return String(i+"\n")})}>
+                       <CopyToClipboard text={navigation[3].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                      <button className="copy-button">Copy to clipboard</button>
                      </CopyToClipboard>
                   <code>
@@ -109,7 +109,7 @@ function NavigationDesign(props) {
                 <TabPanel>
                    
                    <div className="code-content">
-                     <CopyToClipboard text={navigation[4].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={navigation[4].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -120,7 +120,7 @@ function NavigationDesign(props) {
                 </TabPanel>
                 <TabPanel>
                      <div className="code-content">
-                     <CopyToClipboard text={navigation[5].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={navigation[5].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>

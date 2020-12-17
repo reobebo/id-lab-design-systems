@@ -32,7 +32,7 @@ function WhatWeDoDesign(props) {
         <TabPanel>
            
            <div className="code-content">
-             <CopyToClipboard text={whatWeDo[1].split("\n").map((i,key) => { return String(i+"\n")})}>
+             <CopyToClipboard text={whatWeDo[1].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                <button className="copy-button">Copy to clipboard</button>
                </CopyToClipboard>
         <code>
@@ -42,7 +42,7 @@ function WhatWeDoDesign(props) {
         </div>
         </TabPanel>
         <TabPanel>
-        <CopyToClipboard text={whatWeDo[2].split("\n").map((i,key) => { return String(i+"\n")})}>
+        <CopyToClipboard text={whatWeDo[2].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                <button className="copy-button">Copy to clipboard</button>
                </CopyToClipboard>
              <div className="code-content">

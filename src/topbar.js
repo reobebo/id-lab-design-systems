@@ -12,9 +12,9 @@ const topbar = () => {
         <div className="topbar">
           <nav className='topnav'>
             <ul className="topbar-list">
-               <li><Link to="/id-lab">Main ID Lab Website</Link></li>
-                <li><Link to="/odi">ODI Conference 2020</Link></li>
-                <li><Link to="/knowledge-portal">Knowledge Portal</Link></li>
+               <li><a href="/id-lab">Main ID Lab Website</a></li>
+                <li><a href="/odi">ODI Conference 2020</a></li>
+                <li><a href="/knowledge-portal">Knowledge Portal</a></li>
             </ul>
             </nav>
         </div>

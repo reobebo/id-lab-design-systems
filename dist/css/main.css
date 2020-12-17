@@ -12,6 +12,11 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  margin-top: 2%;
+  text-align: center;
+}
+
 .topbar-image {
   width: 30px;
   text-align: left;
@@ -47,8 +52,68 @@ img {
   height: 100vh;
 }
 
+.icon-title {
+  text-align: center;
+}
+
 .icon-images {
-      grid-template-areas: "icon icon" "icon icon" "icon icon" "icon icon";
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "icon1 icon2 icon3" "icon4 icon5 icon6" "icon7 icon8 icon9";
+}
+
+.icon1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: icon1;
+}
+
+.icon2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: icon2;
+}
+
+.icon3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: icon3;
+}
+
+.icon4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: icon4;
+}
+
+.icon5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: icon5;
+}
+
+.icon6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: icon6;
+}
+
+.icon7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: icon7;
+}
+
+.icon8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: icon8;
+}
+
+.icon9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: icon9;
 }
 
 .sidebar {

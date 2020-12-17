@@ -1,386 +1,8 @@
-const idLabInfo=`
-    This is the Contact Us page for the ID Lab Website.
-`;
-const idLabHtml=`
-<?php
-/**
-* Template Name: Contact-Us
-**/
-
-
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>DePaul iD-Lab - Contact Us</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Favicons -->
-  <link href="../wp-content/themes/idlabtheme/img/logo_iDLab_png.png" rel="icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700|Playfair+Display" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="../wp-content/themes/idlabtheme/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="../wp-content/themes/idlabtheme/lib/font-awesome-new/css/fontawesome.min.css" rel="stylesheet">
-  <link href="../wp-content/themes/idlabtheme/lib/font-awesome-new/css/brands.css" rel="stylesheet">
-  <link href="../wp-content/themes/idlabtheme/lib/font-awesome-new/css/solid.css" rel="stylesheet">
-
-  <link href="../wp-content/themes/idlabtheme/lib/line-awesome/css/line-awesome.min.css" rel="stylesheet">
-  <link href="../wp-content/themes/idlabtheme/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="../wp-content/themes/idlabtheme/lib/d-din/d-din.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="../wp-content/themes/idlabtheme/style.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--==========================
-  Header
-  ============================-->
-  <header id="header">
-    <div class="container-fluid d-flex align-items-center">
-
-      <div id="logo" class="pull-left">
-        <a href="#hero"><img src="../wp-content/themes/idlabtheme/img/logo_iDLab.svg" alt="" title="" /></img></a>
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!--<h1><a href="#hero">Regna</a></h1>-->
-      </div>
-
-      <nav id="nav-menu-container" class="ml-auto">
-        <ul class="nav-menu">
-          <li><a href="../">Home</a></li>
-          <li><a href="../what-we-do">What We Do</a></li>
-          <li><a href="../our-team">Meet Our Team</a></li>
-          <li class="menu-active"><a href="../new-contact-us">Contact Us</a></li>
-          <li class="menu-has-children"><a>Events</a>
-            <ul>
-              	<li><a href="https://odi2019.depaulidlab.com/">ODI 2019</a></li>
-        				<li><a href="https://odi2018.depaulidlab.com/">ODI 2018</a></li>
-        				<li><a href="https://odi2017.depaulidlab.com/">ODI 2017</a></li>
-        				<li><a href="https://agile2016.depaulidlab.com/" target="_blank">ODI 2016</a></li>
-            </ul>
-          </li>
-          <!--<li><a href="https://ikp.depaulidlab.com/">Knowledge Portal</a></li>-->
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
-
-  <main id="main">
-    <section id="contact-address">
-      <div class="container-fluid">
-        <div class="row justify-content-center text-center">
-          <div id="address-title" class="row text-center">
-            <div class="txt-normal"> Let's </div>
-            <div class="txt-bold">Work Together</div>
-          </div>
-        </div>
-        <div class="row">
-          <div id="address-details" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 txt-rg">
-            <div id="address-text">
-              <div>Want to see where the magic happens?</div>
-              <div>Want to learn more about our business, or to discuss inquiries?</div>
-              <div>Want to meet us in person?</div>
-            </div>
-            <div>Please feel free to contact us!</div>
-            <div id="contact-items-list">
-              <div class="row contact-item align-items-center">
-                <div class="contact-image col-3 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-center pl-0">
-                  <div class="contact-icon fas fa-envelope"></div>
-                </div>
-                <div class="contact-info col-9 col-sm-10 col-md-10 col-lg-10 col-xl-10 px-0">
-                  <div class="contact-header">
-                    Email
-                  </div>
-                  <div class="contact-detail">
-                    <a href="mailto:depaulilab@gmail.com">depaulilab@gmail.com</a>
-                  </div>
-                </div>
-              </div>
-              <div class="row contact-item align-items-center">
-                <div class="contact-image col-3 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-center pl-0">
-                    <div class="contact-icon fas fa-phone-alt"></div>
-                </div>
-                <div class="contact-info col-9 col-sm-10 col-md-10 col-lg-10 col-xl-10 px-0">
-                  <div class="contact-header">
-                    Phone
-                  </div>
-                  <div class="contact-detail">
-                    (312) 362-1309
-                  </div>
-                </div>
-              </div>
-              <div class="row contact-item align-items-center">
-                <div class="contact-image col-3 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-center pl-0">
-                    <div class="contact-icon fas fa-map-marked-alt"></div>
-                </div>
-                <div class="contact-info col-9 col-sm-10 col-md-10 col-lg-10 col-xl-10 px-0">
-                  <div class="contact-header">
-                    Location
-                  </div>
-                  <div class="contact-detail">
-                    243 S Wabash Ave, Chicago, IL 60604, 9th Floor
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="contact-map-box" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 px-0">
-            <div id="contact-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11882.678821280233!2d-87.6255867!3d41.8784523!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x401371e1c22aca86!2sDePaul%20University%20-%20College%20of%20Computing%20and%20Digital%20Media%20(CDM)!5e0!3m2!1sen!2sus!4v1570220989388!5m2!1sen!2sus"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!--==========================
-  Footer include
-  ============================-->
-  <?php include('footer.php'); ?>
-
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="../wp-content/themes/idlabtheme/lib/jquery/jquery.min.js"></script>
-    <script src="../wp-content/themes/idlabtheme/lib/jquery/jquery-migrate.min.js"></script>
-    <script src="../wp-content/themes/idlabtheme/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Contact Form JavaScript File -->
-    <!--<script src="../wp-content/themes/idlabtheme/contactform/contactform.js"></script>-->
-
-    <!-- Template Main Javascript File -->
-    <script src="../wp-content/themes/idlabtheme/js/main.js"></script>
-
-  </body>
-  </html>
-
+const videosInfo=`
+The code provided is what was found in the WordPress site.  Since this is code copied from the Page Builder the code is not accurate. Videos are not included.
 `;
 
-const idLabCss=`
-/*----------------------------------------------------------------------------------------------------------------------
-# Get in touch Page
-----------------------------------------------------------------------------------------------------------------------*/
-
-/* ------- INTRO SECTION ------- */
-#intro-contact {
-  min-height: 100vh;
-  width: 100%;
-  padding: calc(75px + 10%) 20% 10%;
-  background: rgba(216, 216, 216, .16);
-}
-.contact-text {
-  padding: 35px 0;
-}
-
-@media (max-width: 992px ) {
-  #intro-contact {
-    padding: calc(75px + 10%) 2em 10%;
-  }
-}
-
-/* ------- CONTACT FORM SECTION ------- */
-#contact-form {
-  font-family: 'D-DIN DIN-Bold', serif;
-  font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 13px;
-  padding: 5%;
-}
-#contact-form input {
-  font-family: 'D-DIN DIN-Bold', serif;
-  font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 13px;
-}
-#contact-title {
-  margin-bottom: 15px;
-}
-.form-control {
-  height: 40px;
-  border: 2px solid black;
-}
-.multi-line {
-  height: auto;
-}
-#btn-send {
-  font-family: 'D-DIN DIN-Bold', serif;
-  font-size: 14px;
-  letter-spacing: 3px;
-  line-height: 15px;
-  color: white !important;
-  padding: 20px;
-}
-
-
-/* ------- VISIT SECTION ------- */
-#visit-details {
-  padding: 5%;
-  background: #D8D8D8;
-}
-#visit-details .txt-rg {
-  width: 75%;
-}
-
-@media (max-width: 992px ) {
-  #visit-details {
-    padding: 2em;
-  }
-  #visit-details .txt-rg {
-    width: 100%;
-  }
-}
-
-/* ------- CONTACT ADDRESS SECTION ------- */
-#contact-items-list {
-  padding-top: 5%;
-}
-
-.contact-item {
-  padding: 3% 0;
-}
-
-.contact-icon {
-  font-size: 2.5em;
-}
-
-.contact-header {
-  font-weight: bold;
-}
-
-#contact-address {
-  height: 100%;
-  width: 100%;
-  padding: 5% 7%;
-  background: rgba(156, 156, 156, 0.16);
-  background-image: url("../idlabtheme/img/contactIBackground.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#contact-map-box {
-  padding: 5%;
-}
-
-#contact-map {
-  overflow: hidden;
-  padding-bottom: 373px;
-  position: relative;
-  height: 373px;
-  height: 0;
-  border-radius: 16px;
-}
-
-#contact-map iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-#address-details {
-  padding: 2em;
-  background: white;
-  border-radius: 16px;
-}
-
-#address-title {
-  font-family: 'D-DIN Regular', sans-serif;
-  font-style: normal;
-  font-size: 62px;
-  line-height: 84px;
-  color: black;
-  padding: 75px 0;
-  white-space: pre;
-}
-
-#address-text {
-  margin: 0 0 45px 0;
-}
-
-#address-line {
-  font-family: 'D-DIN Regular', serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  line-height: 24px;
-  color: black;
-  margin: 25px 0;
-}
-
-#address-divider {
-  border-bottom: 1px solid #FF8C00;
-}
-
-.address-icon {
-  background: black;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 25px 0 25px 15px;
-}
-
-.address-icon i {
-  color: white;
-}
-
-@media (min-width: 992px) {
-  #contact-map {
-    margin-left: 12%;
-  }
-}
-
-@media (max-width: 768px) {
-  #address-title {
-    font-size: 42px;
-    line-height: 50px;
-    padding: 95px 0 25px 0;
-  }
-}
-
-@media (max-width: 576px) {
-  #address-title {
-    font-size: 32px;
-    line-height: 50px;
-    padding: 95px 0 25px 0;
-  }
-
-  #address-title div {
-    width: 100%;
-  }
-
-  #address-details {
-    border-radius: 8px !important;
-  }
-
-  #contact-map {
-    border-radius: 8px !important;
-    margin: 8% 0 !important;
-  }
-}
-
-`;
-
-const idLabJs=`
-JavaScript is contained in the HTML section.
-`;
-
-const ikpInfo=`
-The code provided is what was found in the WordPress site.  Since this is code copied from the Page Builder the code is not accurate.
-`;
-
-const ikpCode=`
-
+const videosCode=`
 <!DOCTYPE html>
 <html lang="en-US" class="no-js">
 <head>
@@ -394,23 +16,22 @@ const ikpCode=`
 	<![endif]-->
 <!-- Optimized by SG Optimizer plugin version - 5.7.11 -->
 	<!-- This site is optimized with the Yoast SEO plugin v15.4 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>About Us - Knowledge Portal</title>
-	<meta name="description" content="Read more about DePaul iD Lab Innovation Knowledge Portal. Learn more about the companies we have worked with and the projects accomplished." />
+	<title>Videos - Knowledge Portal</title>
 	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<link rel="canonical" href="https://ikp.depaulidlab.com/aboutus/" />
+	<link rel="canonical" href="https://ikp.depaulidlab.com/videos/" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="About Us - Knowledge Portal" />
-	<meta property="og:description" content="Read more about DePaul iD Lab Innovation Knowledge Portal. Learn more about the companies we have worked with and the projects accomplished." />
-	<meta property="og:url" content="https://ikp.depaulidlab.com/aboutus/" />
+	<meta property="og:title" content="Videos - Knowledge Portal" />
+	<meta property="og:description" content="Videos" />
+	<meta property="og:url" content="https://ikp.depaulidlab.com/videos/" />
 	<meta property="og:site_name" content="Knowledge Portal" />
-	<meta property="article:modified_time" content="2020-06-08T02:13:33+00:00" />
+	<meta property="article:modified_time" content="2020-06-09T00:38:16+00:00" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Written by">
 	<meta name="twitter:data1" content="admin">
 	<meta name="twitter:label2" content="Est. reading time">
 	<meta name="twitter:data2" content="0 minutes">
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ikp.depaulidlab.com/#website","url":"https://ikp.depaulidlab.com/","name":"Knowledge Portal","description":"","potentialAction":[{"@type":"SearchAction","target":"https://ikp.depaulidlab.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://ikp.depaulidlab.com/aboutus/#webpage","url":"https://ikp.depaulidlab.com/aboutus/","name":"About Us - Knowledge Portal","isPartOf":{"@id":"https://ikp.depaulidlab.com/#website"},"datePublished":"2019-02-19T08:19:28+00:00","dateModified":"2020-06-08T02:13:33+00:00","description":"Read more about DePaul iD Lab Innovation Knowledge Portal. Learn more about the companies we have worked with and the projects accomplished.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://ikp.depaulidlab.com/aboutus/"]}]}]}</script>
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ikp.depaulidlab.com/#website","url":"https://ikp.depaulidlab.com/","name":"Knowledge Portal","description":"","potentialAction":[{"@type":"SearchAction","target":"https://ikp.depaulidlab.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://ikp.depaulidlab.com/videos/#webpage","url":"https://ikp.depaulidlab.com/videos/","name":"Videos - Knowledge Portal","isPartOf":{"@id":"https://ikp.depaulidlab.com/#website"},"datePublished":"2019-02-19T08:19:14+00:00","dateModified":"2020-06-09T00:38:16+00:00","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://ikp.depaulidlab.com/videos/"]}]}]}</script>
 	<!-- / Yoast SEO plugin. -->
 
 
@@ -442,7 +63,7 @@ img.emoji {
 <link rel='stylesheet' id='video-lightbox-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/wp-video-lightbox/wp-video-lightbox.css?ver=5.6' type='text/css' media='all' />
 <link rel='stylesheet' id='wp-block-library-css'  href='https://ikp.depaulidlab.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
 <link rel='stylesheet' id='amo-team-showcase-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/amo-team-showcase/public/css/amo-team-showcase-public.css?ver=1.1.4' type='text/css' media='all' />
-<link rel='stylesheet' id='fl-builder-layout-15-css'  href='https://ikp.depaulidlab.com/wp-content/uploads/bb-plugin/cache/15-layout.css?ver=0eca21ec2812deb2e8097bb8750d9bc9' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-13-css'  href='https://ikp.depaulidlab.com/wp-content/uploads/bb-plugin/cache/13-layout.css?ver=35c320246e285728b0eff86a8c86ba91' type='text/css' media='all' />
 <link rel='stylesheet' id='font-awesome-5-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/bb-plugin/fonts/fontawesome/css/all.min.css?ver=2.2.3' type='text/css' media='all' />
 <link rel='stylesheet' id='font-awesome-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/bb-plugin/fonts/fontawesome/css/v4-shims.min.css?ver=2.2.3' type='text/css' media='all' />
 <link rel='stylesheet' id='bootstrap-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/bootstrap/css/bootstrap.min.css?ver=3.3.4' type='text/css' media='' />
@@ -458,7 +79,6 @@ img.emoji {
 <link rel='stylesheet' id='team_manager-featherlight-css-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/css/featherlight.css?ver=5.6' type='text/css' media='all' />
 <link rel='stylesheet' id='team_manager-style1-css-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/team-showcase/css/style1.css?ver=5.6' type='text/css' media='all' />
 <link rel='stylesheet' id='fancybox-0-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/lightbox/static/fancybox/jquery.fancybox-1.3.4.css?ver=3.4.7' type='text/css' media='all' />
-<link rel='stylesheet' id='wpforms-full-css'  href='https://ikp.depaulidlab.com/wp-content/plugins/wpforms-lite/assets/css/wpforms-full.min.css?ver=1.6.3.1' type='text/css' media='all' />
 <link rel='stylesheet' id='alchem-bootstrap-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/bootstrap/css/bootstrap.css?ver=5.6' type='text/css' media='' />
 <link rel='stylesheet' id='alchem-font-awesome-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/font-awesome/css/font-awesome.min.css?ver=4.3.0' type='text/css' media='' />
 <link rel='stylesheet' id='alchem-animate-css'  href='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/animate.css?ver=5.6' type='text/css' media='' />
@@ -744,12 +364,12 @@ var photocrati_ajax = {"url":"https:\/\/ikp.depaulidlab.com\/index.php?photocrat
 <script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/plugins/less.min.js?ver=2.5.1' id='alchem-less-js'></script>
 <script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/respond.min.js?ver=2.0.0' id='alchem-respond-js'></script>
 <script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/jquery.nav.js?ver=3.0.0' id='alchem-nav-js'></script>
-<link rel="https://api.w.org/" href="https://ikp.depaulidlab.com/wp-json/" /><link rel="alternate" type="application/json" href="https://ikp.depaulidlab.com/wp-json/wp/v2/pages/15" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ikp.depaulidlab.com/xmlrpc.php?rsd" />
+<link rel="https://api.w.org/" href="https://ikp.depaulidlab.com/wp-json/" /><link rel="alternate" type="application/json" href="https://ikp.depaulidlab.com/wp-json/wp/v2/pages/13" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ikp.depaulidlab.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ikp.depaulidlab.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 5.6" />
-<link rel='shortlink' href='https://ikp.depaulidlab.com/?p=15' />
-<link rel="alternate" type="application/json+oembed" href="https://ikp.depaulidlab.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fikp.depaulidlab.com%2Faboutus%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://ikp.depaulidlab.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fikp.depaulidlab.com%2Faboutus%2F&#038;format=xml" />
+<link rel='shortlink' href='https://ikp.depaulidlab.com/?p=13' />
+<link rel="alternate" type="application/json+oembed" href="https://ikp.depaulidlab.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fikp.depaulidlab.com%2Fvideos%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://ikp.depaulidlab.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fikp.depaulidlab.com%2Fvideos%2F&#038;format=xml" />
 		 <script>
 		   "use strict";
 		   var amoTeamVars                      = {};
@@ -794,7 +414,7 @@ h6 { }
 </style><link rel='stylesheet' id='fl-builder-google-fonts-49eb69510701e9c503d96f60c10168a0-css'  href='//fonts.googleapis.com/css?family=Roboto%3A300&#038;ver=5.6' type='text/css' media='all' />
 <link rel='stylesheet' id='elfsight-youtube-gallery-custom-css'  href='https://ikp.depaulidlab.com/wp-content/uploads/elfsight-youtube-gallery/elfsight-youtube-gallery-custom.css?ver=3.2.0' type='text/css' media='all' />
 </head>
-<body class="page-template-default page page-id-15 fl-builder">
+<body class="page-template-default page page-id-13 fl-builder">
 <div class="wrapper ">
 <div class="top-wrap">
       <header class="header-style-1 header-wrap  logo-left">
@@ -817,8 +437,8 @@ h6 { }
                     </button>
                     <nav class="site-nav" role="navigation">
                     <ul id="menu-main" class="main-nav"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20"><a href="https://ikp.depaulidlab.com/"><span class="menu-item-label">Home</span></a></li>
-<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://ikp.depaulidlab.com/videos/"><span class="menu-item-label">Videos</span></a></li>
-<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-18"><a href="https://ikp.depaulidlab.com/aboutus/" aria-current="page"><span class="menu-item-label">Contact Us</span></a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13 current_page_item menu-item-19"><a href="https://ikp.depaulidlab.com/videos/" aria-current="page"><span class="menu-item-label">Videos</span></a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://ikp.depaulidlab.com/aboutus/"><span class="menu-item-label">Contact Us</span></a></li>
 <li id="menu-item-144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-144"><a href="https://depaulidlab.com/"><span class="menu-item-label"><DePauliDLab id> DePaul iD Lab</DePauliDLab></span></a></li>
 </ul>                    </nav>
                 </div>
@@ -843,8 +463,8 @@ h6 { }
                     </button>
                     <nav class="site-nav" role="navigation">
                         <ul id="menu-main" class="main-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20"><a href="https://ikp.depaulidlab.com/"><span class="menu-item-label">Home</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://ikp.depaulidlab.com/videos/"><span class="menu-item-label">Videos</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-18"><a href="https://ikp.depaulidlab.com/aboutus/" aria-current="page"><span class="menu-item-label">Contact Us</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13 current_page_item menu-item-19"><a href="https://ikp.depaulidlab.com/videos/" aria-current="page"><span class="menu-item-label">Videos</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://ikp.depaulidlab.com/aboutus/"><span class="menu-item-label">Contact Us</span></a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-144"><a href="https://depaulidlab.com/"><span class="menu-item-label"><DePauliDLab id> DePaul iD Lab</DePauliDLab></span></a></li>
 </ul>                    </nav>
                 </div>
@@ -852,7 +472,7 @@ h6 { }
                                      
             <div class="clear"></div>
         </header>  </div>
-<div id="post-15" class="post-15 page type-page status-publish hentry">
+<div id="post-13" class="post-13 page type-page status-publish hentry">
    
  <div class="post-wrap">
             <div class="container">
@@ -860,17 +480,17 @@ h6 { }
                         <div class="col-main">
              
 			<div class="entry-content">
-  <div class="fl-builder-content fl-builder-content-15 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="15"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5c7f541ff20c6 fl-row-custom-height fl-row-align-top fl-row-bg-overlay" data-node="5c7f541ff20c6">
+  <div class="fl-builder-content fl-builder-content-13 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="13"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5e9604685be80 fl-row-custom-height fl-row-align-top fl-row-bg-overlay" data-node="5e9604685be80">
 	<div class="fl-row-content-wrap">
 						<div class="fl-row-content fl-row-full-width fl-node-content">
 		
-<div class="fl-col-group fl-node-5c7f5451bfd96" data-node="5c7f5451bfd96">
-			<div class="fl-col fl-node-5c7f5451bfeda" data-node="5c7f5451bfeda">
+<div class="fl-col-group fl-node-5e9604685be71" data-node="5e9604685be71">
+			<div class="fl-col fl-node-5e9604685be78" data-node="5e9604685be78">
 	<div class="fl-col-content fl-node-content">
-	<div class="fl-module fl-module-heading fl-node-5c70c00143b20" data-node="5c70c00143b20">
+	<div class="fl-module fl-module-heading fl-node-5e9604685be7e" data-node="5e9604685be7e">
 	<div class="fl-module-content fl-node-content">
 		<h3 class="fl-heading">
-		<span class="fl-heading-text">Contact Us</span>
+		<span class="fl-heading-text">Videos</span>
 	</h3>
 	</div>
 </div>
@@ -880,98 +500,23 @@ h6 { }
 		</div>
 	</div>
 </div>
-<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5c6cfac4b0691" data-node="5c6cfac4b0691">
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5c6d21e465885 fl-row-full-height fl-row-align-center" data-node="5c6d21e465885">
 	<div class="fl-row-content-wrap">
-						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
 		
-<div class="fl-col-group fl-node-5c6cfac4b26ff" data-node="5c6cfac4b26ff">
-			<div class="fl-col fl-node-5c6cfac4b27cb" data-node="5c6cfac4b27cb">
+<div class="fl-col-group fl-node-5c6d21e46a8cf" data-node="5c6d21e46a8cf">
+			<div class="fl-col fl-node-5c6d21e46a9ee" data-node="5c6d21e46a9ee">
 	<div class="fl-col-content fl-node-content">
-	<div id="contactform" class="fl-module fl-module-rich-text fl-node-5c6cfac4b3872" data-node="5c6cfac4b3872">
+	<div class="fl-module fl-module-rich-text fl-node-5c6d1e4a129e9" data-node="5c6d1e4a129e9">
 	<div class="fl-module-content fl-node-content">
 		<div class="fl-rich-text">
-	<p>&nbsp;</p>
-<p>
-<style type="text/css">
-
-
-
-	body #wpforms-34 .wpforms-head-container .wpforms-title {
-	font-weight: bold;text-align:left ;color:#ffffff ;	}
-
-	body #wpforms-34 .wpforms-head-container .wpforms-description {
-		color:#ffffff ;		display:block;
-	}
-
-
-	body #wpforms-34 .wpforms-submit-container .wpforms-submit, body #wpforms-34 .wpforms-field-pagebreak button.wpforms-page-button {
-		font-weight: bold;color:#f5f5f5 ;background-color:#21568f ;		border-width: 0px;	}
-	body #wpforms-34 .wpforms-submit-container .wpforms-submit:hover, body #wpforms-34 .wpforms-field-pagebreak button.wpforms-page-button:hover {
-	background-color:#406da1;	color:#8ba6c4;	}
-	body #wpforms-34 .wpforms-submit-container,body #wpforms-34 .wpforms-field-pagebreak .wpforms-pagebreak-left{
-		}
-
-
-	body #wpforms-34 .wpforms-form .wpforms-field input[type=text],
-	body #wpforms-34 .wpforms-form .wpforms-field input[type=email],
-	body #wpforms-34 .wpforms-form .wpforms-field input[type=tel],
-	body #wpforms-34 .wpforms-form .wpforms-field input[type=url],
-	body #wpforms-34 .wpforms-form .wpforms-field input[type=password],
-	body #wpforms-34 .wpforms-form .wpforms-field input[type=number]
-	{
-		background-color:#f5f5f5 ;color:#000000 ;border-color:#21568f ;border-style:solid ;		border-width: 1px;	}
-	body #wpforms-34 .wpforms-form .wpforms-field .wpforms-field-row
-	{
-			}
-	
-
-	body #wpforms-34 .wpforms-form .wpforms-field textarea {
-		background-color:#f5f5f5 ;color:#000000 ;border-color:#21568f ;			border-width: 1px;		
-	}
-
- 
-	body #wpforms-34 .wpforms-form .wpforms-field select {
-
-		background-color:#406da1 ;color:#ffffff ;border-color:#8ba6c4 ;		border-width: 1px;	}
-
- 
-	body #wpforms-34 .wpforms-form .wpforms-field-checkbox li label {
-			}
- 
-	body #wpforms-34 .wpforms-form .wpforms-field .wpforms-field-description {
-
-		color:#0d0d0d ;	}
- 
-	body #wpforms-34 .wpforms-form .wpforms-field label.wpforms-field-label {
-		font-weight: bold;color:#0d0d0d ;	}
-
- 
-	body #wpforms-confirmation-34  {
-		color:#ffffff ;border-color:#21568f ;				border-width: 1px;	}
- 
-	body #wpforms-34 label.wpforms-error {
-		background-color:#21568f ;				border-width: 1px;	}
-/* Styling for Tablets */
-@media only screen and (max-width: 800px) and (min-width:481px) {
-	
-
-
-
-}
-
-@media only screen and (max-width: 480px){
-	
-
-
-
-}
-/*Option to add custom CSS */
-
-
-
-
-		</style>
-		<div class="wpforms-container wpforms-container-full wpf-center" id="wpforms-34"><form id="wpforms-form-34" class="wpforms-validate wpforms-form" data-formid="34" method="post" enctype="multipart/form-data" action="/aboutus/" data-token="1fe62b7c25bc4c35a0efe085e54bc41f"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-34-field_0-container" class="wpforms-field wpforms-field-name wpf-center" data-field-id="0"><label class="wpforms-field-label" for="wpforms-34-field_0">Name <span class="wpforms-required-label">*</span></label><input type="text" id="wpforms-34-field_0" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][0]" required></div><div id="wpforms-34-field_1-container" class="wpforms-field wpforms-field-email wpf-center" data-field-id="1"><label class="wpforms-field-label" for="wpforms-34-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-34-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" required></div><div id="wpforms-34-field_4-container" class="wpforms-field wpforms-field-select wpf-center" data-field-id="4"><label class="wpforms-field-label" for="wpforms-34-field_4">How did you hear about the Innovation Knowledge Portal? <span class="wpforms-required-label">*</span></label><select id="wpforms-34-field_4" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][4]" required="required"><option value="DePaul iD-Lab Website" >DePaul iD-Lab Website</option><option value="DePaul iD-Lab Event" >DePaul iD-Lab Event</option><option value="LinkedIn" >LinkedIn</option><option value="Email" >Email</option><option value="Referral from Colleague" >Referral from Colleague</option><option value="Other"  selected='selected'>Other</option></select></div><div id="wpforms-34-field_2-container" class="wpforms-field wpforms-field-textarea wpf-center" data-field-id="2"><label class="wpforms-field-label" for="wpforms-34-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-34-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required></textarea></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-34-field-hp" class="wpforms-field-label">Name</label><input type="text" name="wpforms[hp]" id="wpforms-34-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="34"><input type="hidden" name="wpforms[author]" value="6"><input type="hidden" name="wpforms[post_id]" value="15"><button type="submit" name="wpforms[submit]" class="wpforms-submit " id="wpforms-submit-34" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Submit">Submit</button></div></form></div>  <!-- .wpforms-container --></p>
+	<p>
+            <div 
+                class="elfsight-widget-youtube-gallery elfsight-widget" 
+                data-elfsight-youtube-gallery-options="%7B%22channel%22%3A%22https%3A%5C%2F%5C%2Fwww.youtube.com%5C%2Fchannel%5C%2FUCDKo_4erdVcPCqMgH6Q4fjg%22%2C%22sourceGroups%22%3A%5B%7B%22name%22%3A%22Channel%20and%20playlist%22%2C%22sources%22%3A%5B%22https%3A%5C%2F%5C%2Fwww.youtube.com%5C%2Fplaylist%3Flist%3DPLeloadL1OOn5o1TT3fa461AIJ8ABlqegs%22%5D%7D%5D%2C%22headerVisible%22%3Afalse%2C%22headerLayout%22%3A%22classic%22%2C%22headerInfo%22%3A%5B%22logo%22%2C%22banner%22%2C%22channelName%22%2C%22videosCounter%22%2C%22subscribersCounter%22%2C%22viewsCounter%22%2C%22subscribeButton%22%5D%2C%22headerChannelName%22%3Anull%2C%22headerChannelDescription%22%3Anull%2C%22headerChannelLogo%22%3Anull%2C%22headerChannelBanner%22%3Anull%2C%22contentColumns%22%3A3%2C%22contentRows%22%3A2%2C%22contentGutter%22%3A20%2C%22contentResponsive%22%3A%5B%7B%22minWidth%22%3A375%2C%22columns%22%3A%221%22%2C%22rows%22%3A1%2C%22gutter%22%3A%220%22%7D%2C%7B%22minWidth%22%3A768%2C%22columns%22%3A2%2C%22rows%22%3A1%2C%22gutter%22%3A%2220%22%7D%5D%2C%22width%22%3A%22full%22%2C%22videoLayout%22%3A%22classic%22%2C%22videoInfo%22%3A%5B%22playIcon%22%2C%22duration%22%2C%22title%22%2C%22date%22%2C%22description%22%5D%2C%22videoPlayMode%22%3A%22popup%22%2C%22popupInfo%22%3A%5B%22title%22%2C%22channelLogo%22%2C%22channelName%22%2C%22viewsCounter%22%2C%22likesCounter%22%2C%22dislikesCounter%22%2C%22likesRatio%22%2C%22share%22%2C%22date%22%2C%22description%22%2C%22descriptionMoreButton%22%2C%22comments%22%5D%2C%22popupAutoplay%22%3Atrue%2C%22contentDirection%22%3A%22vertical%22%2C%22contentArrowsControl%22%3Atrue%2C%22contentScrollControl%22%3Afalse%2C%22contentDragControl%22%3Atrue%2C%22contentPaginationControl%22%3Atrue%2C%22contentScrollbar%22%3Afalse%2C%22contentSearch%22%3Afalse%2C%22contentDivider1%22%3Anull%2C%22contentTransitionSpeed%22%3A600%2C%22contentTransitionEffect%22%3A%22slide%22%2C%22contentFreeMode%22%3Afalse%2C%22contentDivider2%22%3Anull%2C%22contentAuto%22%3A0%2C%22contentAutoPauseOnHover%22%3Afalse%2C%22colorScheme%22%3A%22custom%22%2C%22colorHeaderBg%22%3A%22rgb%2833%2C%2086%2C%20143%29%22%2C%22colorHeaderBannerOverlay%22%3A%22rgb%2833%2C%2086%2C%20143%29%22%2C%22colorHeaderChannelName%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorHeaderChannelNameHover%22%3A%22rgb%2898%2C%20220%2C%20255%29%22%2C%22colorHeaderChannelDescription%22%3A%22rgb%28209%2C%20238%2C%20246%29%22%2C%22colorHeaderAnchor%22%3A%22rgb%2898%2C%20220%2C%20255%29%22%2C%22colorHeaderAnchorHover%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorHeaderCounters%22%3A%22rgb%28140%2C%20170%2C%20197%29%22%2C%22colorGroupsBg%22%3A%22rgb%28139%2C%20166%2C%20196%29%22%2C%22colorGroupsLink%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorGroupsLinkHover%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorGroupsLinkActive%22%3A%22rgb%2898%2C%20220%2C%20255%29%22%2C%22colorGroupsHighlightHover%22%3A%22rgb%280%2C%20198%2C%20255%29%22%2C%22colorGroupsHighlightActive%22%3A%22rgb%280%2C%20198%2C%20255%29%22%2C%22colorVideoBg%22%3A%22rgb%2833%2C%2056%2C%2075%29%22%2C%22colorVideoOverlay%22%3A%22rgba%2833%2C%2086%2C%20143%2C%200.82%29%22%2C%22colorVideoPlayIcon%22%3A%22rgba%28207%2C%20207%2C%20207%2C%200.56%29%22%2C%22colorVideoPlayIconHover%22%3A%22rgba%28255%2C%20255%2C%20255%2C%200.8%29%22%2C%22colorVideoDuration%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorVideoDurationBg%22%3A%22rgba%28171%2C%20171%2C%20171%2C%200.6%29%22%2C%22colorVideoTitle%22%3A%22rgb%2813%2C%2013%2C%2013%29%22%2C%22colorVideoTitleHover%22%3A%22rgb%2833%2C%2086%2C%20143%29%22%2C%22colorVideoDate%22%3A%22rgb%2813%2C%2013%2C%2013%29%22%2C%22colorVideoDescription%22%3A%22rgb%2845%2C%2051%2C%2053%29%22%2C%22colorVideoAnchor%22%3A%22rgb%28180%2C%20185%2C%20186%29%22%2C%22colorVideoAnchorHover%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorVideoCounters%22%3A%22rgba%2890%2C%20130%2C%20165%2C%201%29%22%2C%22colorPopupBg%22%3A%22rgb%2833%2C%2086%2C%20143%29%22%2C%22colorPopupAnchor%22%3A%22rgb%280%2C%20198%2C%20255%29%22%2C%22colorPopupAnchorHover%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorPopupOverlay%22%3A%22rgba%284%2C%2017%2C%2028%2C%200.8%29%22%2C%22colorPopupTitle%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorPopupChannelName%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorPopupChannelNameHover%22%3A%22rgb%280%2C%20198%2C%20255%29%22%2C%22colorPopupViewsCounter%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorPopupLikesRatio%22%3A%22rgb%2844%2C%20138%2C%20218%29%22%2C%22colorPopupDislikesRatio%22%3A%22rgb%2851%2C%2079%2C%20102%29%22%2C%22colorPopupLikesCounter%22%3A%22rgba%2890%2C%20130%2C%20165%2C%201%29%22%2C%22colorPopupDislikesCounter%22%3A%22rgba%2890%2C%20130%2C%20165%2C%201%29%22%2C%22colorPopupShare%22%3A%22rgba%2890%2C%20130%2C%20165%2C%201%29%22%2C%22colorPopupDate%22%3A%22rgba%2890%2C%20130%2C%20165%2C%201%29%22%2C%22colorPopupDescription%22%3A%22rgb%28209%2C%20238%2C%20246%29%22%2C%22colorPopupDescriptionMoreButton%22%3A%22rgba%2890%2C%20130%2C%20165%2C%201%29%22%2C%22colorPopupDescriptionMoreButtonHover%22%3A%22rgb%28209%2C%20238%2C%20246%29%22%2C%22colorPopupCommentsUsername%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorPopupCommentsUsernameHover%22%3A%22rgb%280%2C%20198%2C%20255%29%22%2C%22colorPopupCommentsPassedTime%22%3A%22rgba%2890%2C%20130%2C%20165%2C%201%29%22%2C%22colorPopupCommentsLikes%22%3A%22rgba%2890%2C%20130%2C%20165%2C%201%29%22%2C%22colorPopupCommentsText%22%3A%22rgb%28209%2C%20238%2C%20246%29%22%2C%22colorPopupControls%22%3A%22rgb%2868%2C%20107%2C%20140%29%22%2C%22colorPopupControlsHover%22%3A%22rgb%280%2C%20198%2C%20255%29%22%2C%22colorPopupControlsMobile%22%3A%22rgb%2868%2C%20107%2C%20140%29%22%2C%22colorPopupControlsMobileBg%22%3A%22rgb%2833%2C%2056%2C%2075%29%22%2C%22colorContentBg%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorContentArrows%22%3A%22rgb%28255%2C%20255%2C%20255%29%22%2C%22colorContentArrowsHover%22%3A%22rgb%280%2C%20198%2C%20255%29%22%2C%22colorContentArrowsBg%22%3A%22rgba%280%2C%200%2C%200%2C%200.7%29%22%2C%22colorContentArrowsBgHover%22%3A%22rgba%280%2C%200%2C%200%2C%200.95%29%22%2C%22colorContentScrollbarBg%22%3A%22rgb%28139%2C%20166%2C%20196%29%22%2C%22colorContentScrollbarSliderBg%22%3Anull%2C%22lang%22%3A%22en%22%2C%22adsClient%22%3Anull%2C%22adsSlotsContent%22%3Anull%2C%22adsSlotsPopup%22%3Anull%2C%22noCookies%22%3Anull%2C%22cacheTime%22%3A3600%2C%22key%22%3A%22AIzaSyAv2W8UfDlFaD5iHWM__GOclpPGIhVgcg8%22%7D" 
+                data-elfsight-youtube-gallery-version="3.2.0">
+            </div>
+            </p>
 </div>
 	</div>
 </div>
@@ -1018,7 +563,7 @@ h6 { }
             </div>          
         </footer>
     </div>  
-    <!-- ngg_resource_manager_marker --><script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/uploads/bb-plugin/cache/15-layout.js?ver=0eca21ec2812deb2e8097bb8750d9bc9' id='fl-builder-layout-15-js'></script>
+    <!-- ngg_resource_manager_marker --><script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/uploads/bb-plugin/cache/13-layout.js?ver=35c320246e285728b0eff86a8c86ba91' id='fl-builder-layout-13-js'></script>
 <script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/magee-shortcodes/assets/bootstrap/js/bootstrap.min.js?ver=3.3.4' id='bootstrap-js'></script>
 <script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/dist/vendor/moment.min.js?ver=2.26.0' id='moment-js'></script>
 <script type='text/javascript' id='moment-js-after'>
@@ -1054,18 +599,9 @@ var alchem_params = {"ajaxurl":"https:\/\/ikp.depaulidlab.com\/wp-admin\/admin-a
 <script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/themes/alchem/js/jquery.infinitescroll.js' id='alchem-infinitescroll-js'></script>
 <script type='text/javascript' src='https://ikp.depaulidlab.com/wp-includes/js/wp-embed.min.js?ver=5.6' id='wp-embed-js'></script>
 <script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/elfsight-youtube-gallery-cc/assets/elfsight-youtube-gallery.js?ver=3.2.0' id='elfsight-youtube-gallery-js'></script>
-<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/wpforms-lite/assets/js/jquery.validate.min.js?ver=1.19.0' id='wpforms-validation-js'></script>
-<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/wpforms-lite/assets/js/mailcheck.min.js?ver=1.1.2' id='wpforms-mailcheck-js'></script>
-<script type='text/javascript' src='https://ikp.depaulidlab.com/wp-content/plugins/wpforms-lite/assets/js/wpforms.js?ver=1.6.3.1' id='wpforms-js'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var wpforms_settings = {"val_required":"This field is required.","val_url":"Please enter a valid URL.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_confirm":"Field values do not match.","val_fileextension":"File type is not allowed.","val_filesize":"File exceeds max size allowed. File was not uploaded.","val_time12h":"Please enter time in 12-hour AM\/PM format (eg 8:45 AM).","val_time24h":"Please enter time in 24-hour format (eg 22:45).","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","val_post_max_size":"The total size of the selected files {totalSize} Mb exceeds the allowed limit {maxSize} Mb.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","post_max_size":"134217728","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/ikp.depaulidlab.com\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/ikp.depaulidlab.com\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"]}
-/* ]]> */
-</script>
 </body>
 </html>
 `;
 
 
-
-export const contactUs=[idLabInfo,idLabHtml,idLabCss,idLabJs,ikpInfo,ikpCode];
+export const videos=[videosInfo,videosCode];

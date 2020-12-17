@@ -23,7 +23,7 @@ function PeopleDesign(props) {
                 <TabPanel>
                    
                    <div className="code-content">
-                     <CopyToClipboard text={people[0].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={people[0].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                        <button className="copy-button">Copy to clipboard</button>
                        </CopyToClipboard>
                 <code>
@@ -34,7 +34,7 @@ function PeopleDesign(props) {
                 </TabPanel>
                 <TabPanel>
                      <div className="code-content">
-                     <CopyToClipboard text={people[1].split("\n").map((i,key) => { return String(i+"\n")})}>
+                     <CopyToClipboard text={people[1].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                    <button className="copy-button">Copy to clipboard</button>
                    </CopyToClipboard>
                 <code>
@@ -64,7 +64,7 @@ function PeopleDesign(props) {
                   <TabPanel>
                      
                      <div className="code-content">
-                       <CopyToClipboard text={people[2].split("\n").map((i,key) => { return String(i+"\n")})}>
+                       <CopyToClipboard text={people[2].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                          <button className="copy-button">Copy to clipboard</button>
                          </CopyToClipboard>
                   <code>
@@ -75,7 +75,7 @@ function PeopleDesign(props) {
                   </TabPanel>
                   <TabPanel>
                        <div className="code-content">
-                       <CopyToClipboard text={people[3].split("\n").map((i,key) => { return String(i+"\n")})}>
+                       <CopyToClipboard text={people[3].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                      <button className="copy-button">Copy to clipboard</button>
                      </CopyToClipboard>
                   <code>

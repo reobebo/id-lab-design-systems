@@ -5,6 +5,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
 function ContactUsDesign(props) {
+  if(props.app==='id-lab'){
     return (
         <div className="content">
         <h1>
@@ -33,7 +34,7 @@ function ContactUsDesign(props) {
         <TabPanel>
            
            <div className="code-content">
-             <CopyToClipboard text={contactUs[1].split("\n").map((i,key) => { return String(i+"\n")})}>
+             <CopyToClipboard text={contactUs[1].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                <button className="copy-button">Copy to clipboard</button>
                </CopyToClipboard>
         <code>
@@ -43,7 +44,7 @@ function ContactUsDesign(props) {
         </div>
         </TabPanel>
         <TabPanel>
-        <CopyToClipboard text={contactUs[2].split("\n").map((i,key) => { return String(i+"\n")})}>
+        <CopyToClipboard text={contactUs[2].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
                <button className="copy-button">Copy to clipboard</button>
                </CopyToClipboard>
              <div className="code-content">
@@ -62,7 +63,49 @@ function ContactUsDesign(props) {
       </Tabs>
       
     </div>
+    );}else{
+      return (
+        <div className="content">
+        <h1>
+        Contact Us Page
+    </h1>
+        
+        <Tabs className="tab-content">
+        <TabList>
+          <Tab>Info</Tab>
+          <Tab>Code</Tab>
+        
+        </TabList>
+
+
+        <TabPanel>
+           
+           <div className="code-content">
+            
+        <code>
+             {contactUs[4].split("\n").map((i,key) => {
+        return <div key={key}>{i}</div>;})}
+        </code>
+        </div>
+        </TabPanel>
+        <TabPanel>
+           
+           <div className="code-content">
+             <CopyToClipboard text={contactUs[5].split("\n").map((i,key) => { return String(i+"\n")}).join("")}>
+               <button className="copy-button">Copy to clipboard</button>
+               </CopyToClipboard>
+        <code>
+             {contactUs[5].split("\n").map((i,key) => {
+        return <div key={key}>{i}</div>;})}
+        </code>
+        </div>
+        </TabPanel>
+       
+      </Tabs>
+      
+    </div>
     );
+    }
 }
 
 export default ContactUsDesign;

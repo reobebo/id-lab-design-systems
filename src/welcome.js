@@ -43,9 +43,9 @@ const Welcome = (props) => {
         <h1>{props.name}</h1>
         <h4>{props.description}</h4>
         <div className="welcome-buttons-section">
-          <Button onClick={handleClickOpen} className="welcome-buttons">
+          <button onClick={handleClickOpen} className="welcome-buttons">
         <a className="btn btn-outline-blue btn-xl text-uppercase resp-button">Foundations</a>
-        </Button>
+        </button>
         <Dialog
         open={open}
         onClose={handleClose}
@@ -64,9 +64,9 @@ const Welcome = (props) => {
           </Button>
         </DialogActions>
       </Dialog>
-        <Button onClick={handleClickOpenComponent} className="welcome-buttons">
+        <button onClick={handleClickOpenComponent} className="welcome-buttons">
          <a className="btn btn-outline-blue btn-xl text-uppercase resp-button">Components</a>
-         </Button>
+         </button>
          <Dialog
         open={openComponents}
         onClose={handleCloseComponent}
@@ -85,9 +85,9 @@ const Welcome = (props) => {
           </Button>
         </DialogActions>
       </Dialog>
-         <Button onClick={handleClickOpenPages} className="welcome-buttons">
+         <button onClick={handleClickOpenPages} className="welcome-buttons">
          <a  className="btn btn-outline-blue btn-xl text-uppercase resp-button">Pages</a>
-         </Button>
+         </button>
          <Dialog
         open={openPages}
         onClose={handleClosePages}
