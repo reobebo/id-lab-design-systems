@@ -6,8 +6,12 @@ import ikpImage from './img/ikp-banner.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import {banners} from './content/BannersContent';
+
+/* This page contains the code used for the Banners/Headers in the ID Lab, ODI, and IKP projects.
+The content where all the code is from is in the BannersContent.js file */ 
+
 export default function BannersDesign(props) {
-    console.log(props.app);
+    // displays id lab banner code
     if(props.app==='id-lab'){
       return (
           <div className="content">
@@ -48,7 +52,9 @@ export default function BannersDesign(props) {
             </Tabs>
             
           </div>
-      )}if(props.app==='odi'){
+      )}
+      // displays code for the odi banner
+      if(props.app==='odi'){
         return (
             <div className="content">
                 <h1>
@@ -90,7 +96,9 @@ export default function BannersDesign(props) {
               </Tabs>
               
             </div>
-        )}else{
+        )}
+        // displays ikp banner code
+        else{
         return(
            <div className="content">
               <h1>

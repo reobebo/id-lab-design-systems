@@ -3,7 +3,12 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {meetOurTeam} from './content/MeetOurTeamContent';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
+/* This page contains the code used for the Meet Our Team Page in the ID Lab, ODI, and IKP projects.
+The content where all the code is from is in the MeetOurTeamContent.js file */ 
+
+
 function MeetOurTeamDesign(props) {
+    // displays id lab Meet Our Team code
     return (
         <div className="content">
         <h1>

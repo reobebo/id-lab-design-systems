@@ -3,6 +3,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {videos} from './content/VideosContent';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
+/* This page contains the code used for the Videos page in the  IKP project.
+The content where all the code is from is in the VideosContent.js file */ 
+
 function VideosPageDesign() {
     return (
         <div className="content">

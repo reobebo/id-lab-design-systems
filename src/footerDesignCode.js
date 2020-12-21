@@ -5,10 +5,13 @@ import odiImage from './img/odi-footer.png';
 import ikpImage from './img/ikp-footer.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import {idLabFooter} from './content/footerContent';
+import {idLabFooter} from './content/FooterContent';
+
+/* This page contains the code used for the Meet Our Team Page in the ID Lab, ODI, and IKP projects.
+The content where all the code is from is in the MeetOurTeamContent.js file */ 
 
 const FooterDesignCode = (props) => {
-  console.log(props.app);
+   // displays id lab footer code
   if(props.app==='id-lab'){
     return (
         <div className="content">
@@ -55,7 +58,9 @@ const FooterDesignCode = (props) => {
           </Tabs>
           
         </div>
-    )}if(props.app==='odi'){
+    )}
+     // displays odi footer code
+    if(props.app==='odi'){
       return (
           <div className="content">
               <h1>
@@ -101,7 +106,9 @@ const FooterDesignCode = (props) => {
             </Tabs>
             
           </div>
-      )}else{
+      )}
+       // displays ikp footer code
+      else{
       return(
          <div className="content">
             <h1>

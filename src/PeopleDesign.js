@@ -6,7 +6,11 @@ import image from './img/id-lab-people.png';
 import odiImage from './img/odi-people.png';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
+/* This page contains the code used for the People secion in the ID Lab and ODI projects.
+The content where all the code is from is in the PeopleContent.js file */ 
+
 function PeopleDesign(props) {
+   // displays id lab people code
     if(props.app==='id-lab'){
         return (
             <div className="content">
@@ -47,7 +51,9 @@ function PeopleDesign(props) {
               </Tabs>
               
             </div>
-        )}else if(props.app==='odi'){
+        )}
+        // displays odi people code
+        else if(props.app==='odi'){
           return (
               <div className="content">
                   <h1>

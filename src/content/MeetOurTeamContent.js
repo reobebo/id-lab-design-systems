@@ -1,3 +1,5 @@
+/* Content for the MeetOurTeamDesign.js file */
+
 const idLabInfo=`
     This is the Meet Our People Page for the ID lab website.
 `;

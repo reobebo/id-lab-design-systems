@@ -3,8 +3,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {contactUs} from './content/ContactUsContent';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
+/* This page contains the code used for the Contact Us page in the ID Lab and IKP projects.
+The content where all the code is from is in the ContactUsContent.js file */ 
 
 function ContactUsDesign(props) {
+   // displays id lab Contact Us code
   if(props.app==='id-lab'){
     return (
         <div className="content">
@@ -63,7 +66,9 @@ function ContactUsDesign(props) {
       </Tabs>
       
     </div>
-    );}else{
+    )}
+    // displays knowledge portal Contact Us code
+    else{
       return (
         <div className="content">
         <h1>

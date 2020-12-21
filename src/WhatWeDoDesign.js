@@ -3,6 +3,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {whatWeDo} from './content/WhatWeDoContent';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
+/* This page contains the code used for the What We Do Page in the ID Lab WhatWeDoContent.js file */ 
+
 function WhatWeDoDesign(props) {
     return (
         <div className="content">

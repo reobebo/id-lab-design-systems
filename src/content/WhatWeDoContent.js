@@ -1,3 +1,5 @@
+/* Content for the WhatWeDoDesign.js file */
+
 /* ID Lab Content */
 
 const idLabInfo = `

@@ -6,9 +6,9 @@ import {
   Route,
   useParams
 } from "react-router-dom";
-import FooterDesignCode from './footerDesignCode';
-import Sidebaritem from './sidebarItem';
-import image from './img/primary-logo-small-colored.png';
+import FooterDesignCode from './FooterDesignCode';
+import Sidebaritem from './SidebarItem';
+import sidebarImage from './img/primary-logo-small-colored.png';
 import TypeographyAndFont from './TypographyFontsDesign';
 import ColorsDesign from './ColorsDesign';
 import BackgroundsDesign from './BackgroundsDesign';
@@ -28,12 +28,12 @@ import VideosPageDesign from './VideosPageDesign';
 
 const Sidebar = () => {
   let { app } = useParams();
-  console.log(app);
+  // sidebar for the id lab assets 
   if(app==="id-lab"){
     return (
       <Router>
         <div className="sidebar">
-           <img className="topbar-image" src={image} alt=""/>
+           <img className="topbar-image" src={sidebarImage} alt=""/>
               
             <nav className='nav-items'>
             <h4><span></span>Foundations</h4>
@@ -119,11 +119,12 @@ const Sidebar = () => {
     
     </Router> 
     )}
+     // sidebar for the odi assets 
     if(app==="odi"){
     return (
       <Router>
         <div className="sidebar">
-           <img className="topbar-image" src={image} alt=""/>
+           <img className="topbar-image" src={sidebarImage} alt=""/>
               
             <nav className='nav-items'>
             <h4><span></span>Foundations</h4>
@@ -197,11 +198,12 @@ const Sidebar = () => {
     
     </Router> 
     )}
+     // sidebar for the ikp assets 
     else{
       return (
         <Router>
          <div className="sidebar">
-           <img className="topbar-image" src={image} alt=""/>
+           <img className="topbar-image" src={sidebarImage} alt=""/>
             <nav className='nav-items'>
             <h4><span></span>Foundations</h4>
 

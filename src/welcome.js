@@ -8,6 +8,8 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Button from '@material-ui/core/Button';
 
+/* This page contains the Welcome Page code that is dynamically created depening on whether the user clicks on ID Lab, ODI, or Knowledge Portal on the top bar */ 
+
 const Welcome = (props) => {
   const [open, setOpen] = useState(false);
  

@@ -1,3 +1,5 @@
+/* Content thats used for the BannersDesign.js file */
+
 /* ID Lab Content */
 const idLabBannerHtml=`
 <main id="main">

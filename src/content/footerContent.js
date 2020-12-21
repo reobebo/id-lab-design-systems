@@ -1,3 +1,5 @@
+/* Content for the FooterDesign.js file */
+
 /* id Lab Footer */
 const idLabFooterHtml = `
     <!DOCTYPE html>

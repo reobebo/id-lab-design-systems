@@ -8,6 +8,8 @@ import backgroundFourImage from './img/background-4.png';
 import backgroundFiveImage from './img/background-5.png';
 import backgroundSixImage from './img/background-6.png';
 
+/* This page contains the code used for the Backgrounds that should be used in the ID Lab, ODI, and IKP projects. */ 
+
 function BackgroundsDesign() {
     return (
         <div className="content">

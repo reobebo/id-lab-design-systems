@@ -1,3 +1,5 @@
+/* Content for the NavigationDesign.js file */
+
 /* ID Lab Content */
 const idLabNavigationHtml=`
 <nav id="nav-menu-container" class="ml-auto">

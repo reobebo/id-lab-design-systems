@@ -1,3 +1,5 @@
+/* Content for the HomePageDesign.js file */
+
 /* ID Lab Home Page */
 const idLabInfo = `This is the main ID Lab website home page.  NOTE: JavaScript is included on the main HTML page`;
 

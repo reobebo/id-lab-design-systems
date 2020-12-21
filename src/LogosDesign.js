@@ -15,6 +15,8 @@ import smallLogoExampleFour from './img/small-logo-four.png';
 import smallLogoExampleFive from './img/small-logo-five.png';
 import smallLogoExampleSix from './img/small-logo-six.png';
 
+/* This page contains all the logos used accross the ID Lab, ODI, and IKP sites as well as an explaination */ 
+
 function LogosDesign() {
     return (
        

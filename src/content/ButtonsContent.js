@@ -1,3 +1,5 @@
+/* Content for the ButtonsDesign.js file */
+
 /* ID Lab Content */
 const idLabButtonHtml=`
 <a id="business-left-btn" href="../contact-us" class="btn btn-business no-radius btn-arrow txt-box-btn">Get Involved<span class="la la-arrow-right left-sapce"></span></a>

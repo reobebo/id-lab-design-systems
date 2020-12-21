@@ -1,13 +1,9 @@
 import React from 'react';
 import './scss/main.css';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-const topbar = () => {
+// code for the top navigation bar of the Design System
+
+const Topbar = () => {
     return (
         <div className="topbar">
           <nav className='topnav'>
@@ -21,4 +17,4 @@ const topbar = () => {
     )
 }
 
-export default topbar
+export default Topbar

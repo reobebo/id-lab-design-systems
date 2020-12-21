@@ -7,7 +7,12 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import {navigation} from './content/NavigationContent';
 
+/* This page contains the code used for the Navigation in the ID Lab, ODI, and IKP projects.
+The content where all the code is from is in the NavigationContent.js file */ 
+
+
 function NavigationDesign(props) {
+     // displays id lab navigation code
     if(props.app==='id-lab'){
         return (
             <div className="content">
@@ -50,7 +55,9 @@ function NavigationDesign(props) {
               </Tabs>
               
             </div>
-        )}if(props.app==='odi'){
+        )}
+        // displays odi navigation code
+        if(props.app==='odi'){
           return (
               <div className="content">
                   <h1>
@@ -92,7 +99,9 @@ function NavigationDesign(props) {
                 </Tabs>
                 
               </div>
-          )}else{
+          )}
+          // displays ikp navigation code
+          else{
           return(
              <div className="content">
                 <h1>

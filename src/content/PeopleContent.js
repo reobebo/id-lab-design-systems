@@ -1,3 +1,5 @@
+/* Content for the PeopleDesign.js file */
+
 /* ID Lab Content */
 const idLabPeopleHtml=`
 

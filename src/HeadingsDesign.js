@@ -5,6 +5,7 @@ import headingsImageTwo from './img/headings-2.png';
 import headingsImageThree from './img/headings-3.png';
 
 function HeadingsDesign() {
+  // displays all the headings used in Figma that each site is encouraged to use
     return (
        <div className="content">
             <h1>

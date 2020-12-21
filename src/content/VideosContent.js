@@ -1,3 +1,5 @@
+/* Content for the VideosPageDesign.js file */
+
 const videosInfo=`
 The code provided is what was found in the WordPress site.  Since this is code copied from the Page Builder the code is not accurate. Videos are not included.
 `;

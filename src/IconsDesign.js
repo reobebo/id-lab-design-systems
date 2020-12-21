@@ -81,6 +81,7 @@ import fbLargeImageSquareFour from './img/fbLargeImageSquareFour.png';
 import fbLargeImageCircleFour from './img/fbLargeImageCircleFour.png';
 import fbLargeImageRoundedFour from './img/fbLargeImageRoundedFour.png';
 
+/* This page contains all the social media icons used accross the ID Lab, ODI, and IKP sites */ 
 
 function IconsDesign() {
     return (

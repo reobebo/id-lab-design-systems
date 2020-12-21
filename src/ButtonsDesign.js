@@ -9,6 +9,9 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import ReactDOM from "react-dom";
 import Welcome from './Welcome';
 
+/* This page contains the code used for the Buttons in the ID Lab, ODI, and IKP projects.
+The content where all the code is from is in the ButtonsContent.js file */ 
+
 function buttonsDesign(props) {
     if(props.app==='id-lab'){
      

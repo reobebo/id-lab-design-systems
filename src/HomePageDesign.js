@@ -3,9 +3,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {homePage} from './content/HomePageContent';
-
+/* This page contains the code used for the home pages in the ID Lab, ODI, and IKP projects.
+The content where all the code is from is in the HomePageContent.js file */ 
 function HomePageDesign(props) {
-  console.log(props.app);
+    // displays id lab home page code
     if(props.app==='id-lab'){
         return (
             <div className="content">
@@ -65,7 +66,9 @@ function HomePageDesign(props) {
               </Tabs>
               
             </div>
-        )}if(props.app==='odi'){
+        )}
+         // displays odi home page code
+        if(props.app==='odi'){
           return (
               <div className="content">
                   <h1>
@@ -125,7 +128,9 @@ function HomePageDesign(props) {
                 </Tabs>
                 
               </div>
-          )}else{
+          )}
+           // displays ikp home page code
+          else{
           return(
              <div className="content">
                 <h1>

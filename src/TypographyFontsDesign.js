@@ -5,6 +5,8 @@ import titleStylesImage from './img/title-style.png';
 import titleStylesExplaination from './img/title-style-explaination.png'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
+/* This page contains the Typography used for the ID Lab, ODI, and IKP projects */ 
+
 function TypographyFontsDesign() {
     return (
     

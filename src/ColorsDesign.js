@@ -1,7 +1,9 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import colorsImage from './img/colors.png';
-import colorsExlainationImage from './img/color-explainations.png'
+import colorsExlainationImage from './img/color-explainations.png';
+
+/* This page contains the Colors used in the ID Lab, ODI, and IKP projects. */ 
 
 function ColorsDesign() {
     return (
@@ -14,8 +16,6 @@ function ColorsDesign() {
             <TabList>
               <Tab>Colors Explaination</Tab>
               <Tab>Colors</Tab>
-             
-            
             </TabList>
             <TabPanel>
                 <div>

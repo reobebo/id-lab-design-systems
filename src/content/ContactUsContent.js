@@ -1,3 +1,5 @@
+/* Content for the ContactUsDesign.js file */
+
 const idLabInfo=`
     This is the Contact Us page for the ID Lab Website.
 `;
